@@ -141,12 +141,17 @@ footer p {
     transform: scale(1.5);
 }
 
+.divider{
+    width: 35%; /* Adjust this value to control the divider's width */
+    height: 2px; /* Adjust this value to control the divider's height */
+    background-color: rgba(255, 255, 255, 0.5);/* Or any color you prefer */
+    margin: auto; /* Add some vertical spacing around the divider */
+    float:center;
+}
+
 /* Devlog styles */
 .devlog {
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 30px;
-    border: 5px solid black;
     margin: 20px 0;
 }
 .devlog h3 {

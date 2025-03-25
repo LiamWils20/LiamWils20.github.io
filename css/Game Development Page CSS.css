@@ -137,6 +137,7 @@ h6 {
 	font-size: 20px;
 	line-height: 25px;
 	border-radius: 30px;
+	max-height: auto;
 }
 .col-4{
 	flex-basis: 30%;
