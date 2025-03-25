@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: #505050;
+  color: #3CE7D1;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* Footer css */
+.col-3 {
+    color: #3CE7D1;
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    text-align: center;
+}
+.col-3 img, iframe {
+    padding: 10px;
+    width: 206px;
+    height: 165px;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+.col-3 p {
+    font-size: 14px;
+}
+.col-3 li {
+    text-align: left;
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+footer a {
+    color: #3CE7D1;
+}
+footer p {
+    text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    background: none;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    padding: 9px 30px;
+    border-radius: 30px;
+}
+
+.dropbtn-2{
+    padding: 0px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown img {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    border-radius: 30px;
+}
+
+.dropdown-content h2 {
+    color: #3CE7D1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 3px 3px black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #3CE7D1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 30px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.row-scrn {
+    float: right;
+    align-items: right;
+}
+
+.scrn-col {
+    flex-basis: 30%;
+    max-width: 350px;
+    max-height: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.scrn-col img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.scrn-col:hover {
+    transform: scale(1.5);
+}
+
+/* Devlog styles */
+.devlog {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid black;
+    margin: 20px 0;
+}
+.devlog h3 {
+    color: #3CE7D1;
+    text-align: left;
+    text-shadow: 3px 3px black;
+}
+.devlog h2 {
+  color: #3CE7D1;
+  text-align: left;
+  text-shadow: 3px 3px black;
+}
+.devlog p {
+    color: #3CE7D1;
+    text-align: left;
+}
+
+.textDec a{
+  text-decoration: underline;
+  color: #26877a;
+}
+
+.textDec:hover a{
+  text-decoration: none;
+  color: #3CE7D1;
+}
