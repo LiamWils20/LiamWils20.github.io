@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Broswer tab title -->
-	<title>Wi.Bi Studios</title>
+	<title>Liam's Portfolio</title>
 	<!-- Links to other places, e.g. css pages and images -->
 	<link rel="icon" href="images/Logo (Transparent).png">
 	
@@ -68,173 +68,92 @@
 		</div>
 	</div>
 
-<!-- #region Hero . Tagline-->
-	<section class="hero">
-		<h2>Innovative. Engaging. Unforgettable.</h2>
-		<p>Welcome to Wi.Bi Studios. Crafting unique gaming experiences with passion.</p>
-		<a href="Projects/All Projects.html" class="btn">Explore Our Games</a>
-	</section>
-	<br> <br> <br> <br> <br>
-<!-- #endregion -->
-
 <!-- Featured Games Made in C# -->
 
 	<div class="small-container">
-		
-<!-- #region Slide Show Content -->
-		<div class="slideshow-container">
-	<!-- #region Slides -->
-		<!-- #region Slide 1 - Splatter Storm -->
-			<div class="mySlides">
-				<img src="images/Project Splatter Storm/Cover Img.png" alt="Slide 1">
-				<div class="slide-text">
-					<div class="slide-name">Splatter Storm</div>
-					<div class="slide-description">Coming 2026</div>
-				</div>
-				<a class="slide-button" href="Projects/Current Projects/Project Splatter Storm.html">Learn More!</a>
-			</div>
-		<!-- #endregion -->
-
-		<!-- #region Slide 2 - Realm Runner -->
-			<div class="mySlides">
-				<img src="images/Project Realm Runner/Cover Image.png" alt="Slide 2">
-				<div class="slide-text">
-					<div class="slide-name">Realm Runner</div>
-					<div class="slide-description">The realms on the verge of collapse</div>
-				</div>
-				<a class="slide-button" a href="#">Play Now!</a>
-			</div>
-		<!-- #endregion -->
-	<!-- #endregion -->
-			
-			<!-- Next and previous buttons -->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		
-		<!-- Thumbnail images -->
-		<div class="thumbnail-container">
-			<img class="thumbnail" src="images/Project Realm Runner/Cover Image.png" onclick="currentSlide(1)" alt="Thumbnail 1">
-			<img class="thumbnail" src="images/Project Splatter Storm/Cover Img.png" onclick="currentSlide(2)" alt="Thumbnail 2">
-		</div>
-		
-		<script>
-			let slideIndex = 0;
-			showSlides();
-		
-			function showSlides() {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) {slideIndex = 1}
-				slides[slideIndex-1].style.display = "block";
-				setTimeout(showSlides, 30000); // Change image every 30 seconds
-			}
-		
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
-			}
-		
-			function currentSlide(n) {
-				showSlides(slideIndex = n);
-			}
-		</script>
-<!-- #endregion -->	
-		
-		<div class="Desktop">
-			
+		<!-- All Projects -->
 		<div class="title">
-		<br> <br>
-			<h3 style="text-shadow: 3px 3px black;">Recent News</h3>
-			<a class="btn" href="News.html">All News</a>
-			<br>
-			<div class="devlog">
-				<h3>Friday 21st March 2025</h3>
-					<p>We know, we know it’s been a while since our last post! But trust us, we’ve been busy behind
-						the scenes, cooking up some awesome updates for you. And today, we’re excited to share what’s
-						new and what’s next!</p>
-					<br>
-					<h2>Re-design</h2>
-					<p>First up, we’ve redesigned our Game Pages to match the rest of the website. That means a sleeker,
-						more cohesive experience when browsing our titles because great games deserve a great presentation!</p>
-					<br>
-					<h2>Introducing: Splatter Storm</h2>
-					<p>Our latest game, Splatter Storm, is shaping up to be our most action-packed release yet! Think high-speed
-						chaos, vibrant colors, and a whole lot of messy fun. We can’t wait for you to dive in and get your hands
-						(virtually) dirty!</p>
-					<br>
-					<h2>Bringing Back the Classics</h2>
-					<p>We’re also working on incorporating more of our old games into the website! Whether you’re feeling nostalgic or
-						discovering them for the first time, these classics deserve a spot alongside our latest projects. Stay tuned as
-						we bring them back, better than ever!</p>
-					<br>
-					<h2>What's Next?</h2>
-					<p>Our main focus now is wrapping up Splatter Storm and putting the finishing touches on the website. Once
-						that’s done, we’ll be shifting gears towards even bigger projects—so stay tuned!</p>
-					<br>
-					<h2>Want the Latest Updates?</h2>
-					<p>Join <a href="TheMailingList.html">our mailing list</a> and be the first to know about new releases, behind-the-scenes content,
-						and exclusive sneak peeks. No spam, just the good stuff!</p>
-					<br>
-					<h2>Support Us & Keep the Dream Alive!</h2>
-					<p>If you love what we’re doing, consider supporting us on <a target="_blank" href="https://www.kickstarter.com/profile/wibistudio-new/about">Kickstarter</a>, 
-						<a target="_blank" href="https://www.youtube.com/@wibistudio">YouTube</a>, <a target="_blank" href="https://www.tiktok.com/@wibi.studios">TikTok</a>, or 
-						<a target="_blank" href="https://www.patreon.com/c/WiBi_Studios">Patreon</a>. Every like, share, and pledge helps us keep making awesome games for you! 🚀</p>
-					<br>
-					<p>Stay tuned there’s so much more to come! 🎮✨</p>
+			<h3 style="text-shadow: 3px 3px black;">My Beloved Projects</h3>
+			<p style="text-shadow: 3px 3px black;">A collection of my prized <br> possessions</p>
+		</div>
+
+		<!-- Desktop List of Games -->
+		<div class="Desktop">
+			<!-- Row 3 of Games -->
+			<div class="row">
+				<!-- BuildABang -->
+				<div class="col-1">
+					
+				</div>
+				<!-- Kade's Last Stand -->
+				<div class="col-1">
+					<a href="Projects/RealmRunner.html"><img src="" alt=""></a>
+					<h1>Realm Runner</h1>
+					<p>Windows, Mac, Linux & Browser</p>
+				</div>
+				<!-- Risen from Hell -->
+				<div class="col-1">
+					
+				</div>
 			</div>
 		</div>
-</div>
 		
+		<!-- Mobile List of Games -->
 		<div class="Mobile">
-			<div class="title">
-				<a class="btn" href="Bug Report.html">Bug Report</a>
-			</div>
 			
-			<div class="title">
-				<h3 style="text-shadow: 3px 3px black;">Recent News</h3>
-				<a class="btn" href="News.html">All News</a>
-				<br>
-				<div class="devlog">
-					<h3>Friday 21st March 2025</h3>
-					<p>We know, we know it’s been a while since our last post! But trust us, we’ve been busy behind
-						the scenes, cooking up some awesome updates for you. And today, we’re excited to share what’s
-						new and what’s next!</p>
-					<br>
-					<h2>Re-design</h2>
-					<p>First up, we’ve redesigned our Game Pages to match the rest of the website. That means a sleeker,
-						more cohesive experience when browsing our titles because great games deserve a great presentation!</p>
-					<br>
-					<h2>Introducing: Splatter Storm</h2>
-					<p>Our latest game, Splatter Storm, is shaping up to be our most action-packed release yet! Think high-speed
-						chaos, vibrant colors, and a whole lot of messy fun. We can’t wait for you to dive in and get your hands
-						(virtually) dirty!</p>
-					<br>
-					<h2>Bringing Back the Classics</h2>
-					<p>We’re also working on incorporating more of our old games into the website! Whether you’re feeling nostalgic or
-						discovering them for the first time, these classics deserve a spot alongside our latest projects. Stay tuned as
-						we bring them back, better than ever!</p>
-					<br>
-					<h2>What's Next?</h2>
-					<p>Our main focus now is wrapping up Splatter Storm and putting the finishing touches on the website. Once
-						that’s done, we’ll be shifting gears towards even bigger projects—so stay tuned!</p>
-					<br>
-					<h2>Want the Latest Updates?</h2>
-					<p>Join <a href="TheMailingList.html">our mailing list</a> and be the first to know about new releases, behind-the-scenes content,
-						and exclusive sneak peeks. No spam, just the good stuff!</p>
-					<br>
-					<h2>Support Us & Keep the Dream Alive!</h2>
-					<p>If you love what we’re doing, consider supporting us on <a target="_blank" href="https://www.kickstarter.com/profile/wibistudio-new/about">Kickstarter</a>, 
-						<a target="_blank" href="https://www.youtube.com/@wibistudio">YouTube</a>, <a target="_blank" href="https://www.tiktok.com/@wibi.studios">TikTok</a>, or 
-						<a target="_blank" href="https://www.patreon.com/c/WiBi_Studios">Patreon</a>. Every like, share, and pledge helps us keep making awesome games for you! 🚀</p>
-					<br>
-					<p>Stay tuned there’s so much more to come! 🎮✨</p>
+			<!-- Row 3 of Games -->
+			<div class="row">
+				<!-- Kade's Last Stand -->
+				<div class="col-1">
+					<a href="Released Projects/Project Chubs Revenge.html"><img src="../images/Project Chubs Revenge/Cover Image.png" alt=""></a>
+					<h1>Chub's Revenge</h1>
+					<p>Windows & Browser</p>
 				</div>
 			</div>
 			
+			<!-- Row 2 of Games -->
+			<div class="row">
+				<!-- BuildABang -->
+				<div class="col-1">
+					<a href="Released Projects/Project BuildABang.html"><img src="../images/Project BuildABang/Cover Image.png" alt=""></a>
+					<h1>BuildABang</h1>
+					<p>Widnows, Mac, Linux & Browser</p>
+				</div>
+				<!-- Kade's Last Stand -->
+				<div class="col-1">
+					<a href="Released Projects/Project Kades Last Stand.html"><img src="../images/Project Kades Last Stand/Cover Image.png" alt=""></a>
+					<h1>Kade's Last Stand</h1>
+					<p>Windows & Browser</p>
+				</div>
+				<!-- Risen from Hell -->
+				<div class="col-1">
+					<a href="Released Projects/Project Risen from Hell.html"><img src="../images/Project Risen from Hell/Cover Image.png" alt=""></a>
+					<h1>Risen from Hell</h1>
+					<p>Windows</p>
+				</div>
+			</div>
+
+			<!-- Row 1 of Games -->
+			<div class="row">
+				<!-- Risen from Hell -->
+				<div class="col-1">
+					<a href="Released Projects/Project Wrap It Up.html"><img src="../images/Project Wrap It Up/Cover Image.png" alt=""></a>
+					<h1>Wrap it Up!</h1>
+					<p>Browser</p>
+				</div>
+				<!-- Neon Racer -->
+				<div class="col-1">
+					<a href="Released Projects/Project Neon Racer.html"><img src="../images/Project Neon Racer/Cover Img.gif" alt=""></a>
+					<h1>Neon Racer</h1>
+					<p>VR & Windows</p>
+				</div>
+				<!-- Realm Runner -->
+				<div class="col-1">
+					<a href="Released Projects/Project Realm Runner.html"><img src="../images/Project Realm Runner/Cover Image.png" alt=""></a>
+					<h1>Realm Runner</h1>
+					<p>Windows</p>
+				</div>
+			</div>
 			
 		</div>
 	</div>
