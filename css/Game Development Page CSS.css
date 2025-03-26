@@ -38,6 +38,12 @@ nav{
 	font-size: 30px;
 }
 
+.eye img{
+	width: 50%;
+	border-radius: 30px;
+	border: 2px solid black;
+}
+
 nav ul{
 	display: inline-block;
 	list-style-type: none;
