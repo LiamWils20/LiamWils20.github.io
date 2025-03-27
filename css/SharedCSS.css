@@ -153,6 +153,7 @@ footer p {
 .devlog {
     padding: 20px;
     margin: 20px 0;
+    height: auto;
 }
 .devlog h3 {
     color: #3CE7D1;
