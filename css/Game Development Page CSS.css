@@ -309,6 +309,13 @@ td a {
 	padding: 9px 30px;
 	border-radius: 30px;
 }
+.form textarea{
+	display: inline-block;
+	text-align: left;
+	color: black;
+	padding: 9px 30px;
+	border-radius: 30px;
+}
 
 .form button{
 	display: inline-block;
@@ -323,6 +330,13 @@ td a {
 	background: #055700;
 	cursor: pointer;
 }
+.form .message-box{
+	height: 100px;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+
 .about-img{
 	width: 300px;
 	height: 300px;
