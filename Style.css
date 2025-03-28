@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: #505050;
+  color: #3CE7D1;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* Desktop Screen CSS */
 @media only screen and (min-width: 971px) {
@@ -741,6 +752,7 @@
 /* #region Row/Col-1 CSS */
     .row {
         display: flex;
+        width: 50%;
         flex-wrap: wrap;
         justify-content: space-around;
     }
