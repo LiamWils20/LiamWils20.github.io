@@ -273,7 +273,7 @@ body {
         transition: background 0.5s;
     }
     .btn:hover {
-        background-image: linear-gradient(to right, aqua, purple);
+        background-image: linear-gradient(to right, rgb(95, 0, 95), rgb(1, 177, 177));
         cursor: pointer;
     }
 
@@ -751,7 +751,6 @@ body {
 /* #region Row/Col-1 CSS */
     .row {
         display: flex;
-        width: 50%;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -835,7 +834,7 @@ body {
         transition: background 0.5s;
     }
     .btn:hover {
-        background-image: linear-gradient(to right, aqua, purple);
+        background-image: linear-gradient(to right, rgb(95, 0, 95), rgb(1, 177, 177));
         cursor: pointer;
     }
 
