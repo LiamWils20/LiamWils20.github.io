@@ -1,16 +1,12 @@
-body {
-	background-image: url(../../images/Background.PNG);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #505050;
-	color: #3CE7D1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
-background {
-	position: absolute;
-	z-index: -1;
+body {
+  background-color: #505050;
+  color: #3CE7D1;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media only screen and (min-width: 971px){	
