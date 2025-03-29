@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Broswer tab title -->
 	<title>Liam's Portfolio</title>
-	<!-- Links to css and broswer image -->
+	<!-- Links to other places, e.g. css pages and images -->
 	<link rel="icon" href="">
 	
-	<link rel="stylesheet" href="Style.css?v=1.0">
-	<link rel="stylesheet" href="css/SharedCSS.css?v=1.0">
+	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="css/SharedCSS.css">
 </head>
 <body>
-	<style>
-		body {
-			background-image: url("images/Background.png"); /* Replace with the actual path to your image */
-			background-size: cover; /* Optional: Adjust as needed */
-			background-repeat: no-repeat; /* Optional: Prevent tiling */
-			background-attachment: fixed; /* Optional: Fix the background image */
-		}
-	</style>
+<style>
+	body {
+		background-image: url("images/Background.png"); /* Replace with the actual path to your image */
+		background-size: cover; /* Optional: Adjust as needed */
+		background-repeat: no-repeat; /* Optional: Prevent tiling */
+		background-attachment: fixed; /* Optional: Fix the background image */
+	}
+</style>
 
-	
+
 	<div class="header">
 		<div class="container">
+<!-- #region Navbar Collection-->
 			<div class="navbar">
-		<!-- Navigation bar section -->
+
+		<!-- #region Navigation bar section -->
 				<nav>
 					<ul>
 						<div class="Desktop">
@@ -35,7 +38,9 @@
 						</div>
 					</ul>
 				</nav>
-				
+		<!-- #endregion -->
+
+		<!-- #region Mobile Navigation bar section -->
 				<div class="Mobile">
 					<div class="dropdown">
 						<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
@@ -48,151 +53,120 @@
 						</div>
 					</div>
 				</div>
+		<!-- #endregion -->
 			</div>
+<!-- #endregion -->
 		</div>
 	</div>
-	
-	<!-- Contains Everything Essential -->
+
+	<!-- #region Hero . Tagline-->
+	<section class="hero">
+		<div class="row-column">
+			<div class="column">
+			  <img src="images/Transparent Logo.png" alt="Logo">
+			</div>
+			<div class="column">
+			  <h2>Liam Wilson</h2>
+			  <p>Game Developer | Programmer | Unity & Unreal Enthusiast</p>
+			  <a href="#bottom" class="btn">Contact Me</a>
+			</div>
+		  </div>
+	</section>
+	<!-- #endregion -->
+
+<!-- #endregion -->
+
+<!-- Featured Games Made in C# -->
+
 	<div class="small-container">
-<!-- All Projects -->
+		<!-- All Projects -->
 		<div class="title">
-			<h3 style="text-shadow: 3px 3px black;">All Projects</h3>
-			<p style="text-shadow: 3px 3px black;">More to come</p>
+			<h3 style="text-shadow: 3px 3px black;">My Beloved Projects</h3>
+			<p style="text-shadow: 3px 3px black;">A collection of my prized <br> possessions</p>
 		</div>
 
-		<!-- Desktop List of Games -->
+	<!-- #region Desktop List of Games -->
 		<div class="Desktop">
 			<!-- Row 3 of Games -->
 			<div class="row">
-                <br> <br> <br> <br> <br> <br>
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Chub's Revenge.html"><img src="images/Development Hub/Project Chubs Revenge/Cover Image.png" alt=""></a>
-					<h1>Chub's Revenge</h1>
-					<p>Windows & Browser</p>
-				</div>
-			</div>
-			
-			<!-- Row 2 of Games -->
-			<div class="row">
 				<!-- BuildABang -->
 				<div class="col-1">
-					<a href="Projects/Project; BuildABang.html"><img src="images/Development Hub/Project BuildABang/Cover Image.png" alt=""></a>
-					<h1>BuildABang</h1>
-					<p>Widnows, Mac, Linux & Browser</p>
+					<a href="Projects/Project; Wrap it Up.html"><img src="images/Development Hub/Project Wrap It Up/Cover Image.png" alt=""></a>
+					<h1>Wrap it up!</h1>
+					<p>Windows & Browser</p>
 				</div>
 				<!-- Kade's Last Stand -->
 				<div class="col-1">
-					<a href="Projects/Project; Kade's Last Stand.html"><img src="images/Development Hub/Project Kades Last Stand/Cover Image.png" alt=""></a>
-					<h1>Kade's Last Stand</h1>
-					<p>Windows & Browser</p>
+					<a href="Projects/Project; Realm Runner.html"><img src="images/Development Hub/Project Realm Runner/Cover Image.png" alt=""></a>
+					<h1>Realm Runner</h1>
+					<p>Windows, Mac, Linux & Browser</p>
 				</div>
 				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Risen from Hell.html"><img src="images/Development Hub/Project Risen from Hell/Cover Image.png" alt=""></a>
-					<h1>Risen from Hell</h1>
-					<p>Windows</p>
-				</div>
-			</div>
-
-			<!-- Row 1 of Games -->
-			<div class="row">
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Wrap It Up.html"><img src="images/Development Hub/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it Up!</h1>
-					<p>Browser</p>
-				</div>
-				<!-- Neon Racer -->
 				<div class="col-1">
 					<a href="Projects/Project; Neon Racer.html"><img src="images/Development Hub/Project Neon Racer/Cover Img.gif" alt=""></a>
 					<h1>Neon Racer</h1>
 					<p>VR & Windows</p>
 				</div>
-				<!-- Realm Runner -->
-				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Development Hub/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows</p>
-				</div>
 			</div>
 		</div>
+	<!-- #endregion -->
 		
-		<!-- Mobile List of Games -->
+	<!-- #region Mobile List of Games -->
 		<div class="Mobile">
-			
 			<!-- Row 3 of Games -->
 			<div class="row">
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Released Projects/Project Chubs Revenge.html"><img src="../images/Project Chubs Revenge/Cover Image.png" alt=""></a>
-					<h1>Chub's Revenge</h1>
-					<p>Windows & Browser</p>
-				</div>
-			</div>
-			
-			<!-- Row 2 of Games -->
-			<div class="row">
-				<!-- BuildABang -->
-				<div class="col-1">
-					<a href="Released Projects/Project BuildABang.html"><img src="../images/Project BuildABang/Cover Image.png" alt=""></a>
-					<h1>BuildABang</h1>
-					<p>Widnows, Mac, Linux & Browser</p>
-				</div>
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Released Projects/Project Kades Last Stand.html"><img src="../images/Project Kades Last Stand/Cover Image.png" alt=""></a>
-					<h1>Kade's Last Stand</h1>
-					<p>Windows & Browser</p>
-				</div>
 				<!-- Risen from Hell -->
 				<div class="col-1">
-					<a href="Released Projects/Project Risen from Hell.html"><img src="../images/Project Risen from Hell/Cover Image.png" alt=""></a>
-					<h1>Risen from Hell</h1>
-					<p>Windows</p>
-				</div>
-			</div>
-
-			<!-- Row 1 of Games -->
-			<div class="row">
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Released Projects/Project Wrap It Up.html"><img src="../images/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it Up!</h1>
-					<p>Browser</p>
-				</div>
-				<!-- Neon Racer -->
-				<div class="col-1">
-					<a href="Released Projects/Project Neon Racer.html"><img src="../images/Project Neon Racer/Cover Img.gif" alt=""></a>
+					<a href="Projects/Project; Neon Racer.html"><img src="images/Development Hub/Project Neon Racer/Cover Img.gif" alt=""></a>
 					<h1>Neon Racer</h1>
 					<p>VR & Windows</p>
 				</div>
-				<!-- Realm Runner -->
+			</div>
+
+			<div class="row">
+				<!-- BuildABang -->
 				<div class="col-1">
-					<a href="Released Projects/Project Realm Runner.html"><img src="../images/Project Realm Runner/Cover Image.png" alt=""></a>
+					<a href="Projects/Project; Wrap it Up.html"><img src="images/Development Hub/Project Wrap It Up/Cover Image.png" alt=""></a>
+					<h1>Wrap it up!</h1>
+					<p>Windows & Browser</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Kade's Last Stand -->
+				<div class="col-1">
+					<a href="Projects/Project; Realm Runner.html"><img src="images/Development Hub/Project Realm Runner/Cover Image.png" alt=""></a>
 					<h1>Realm Runner</h1>
-					<p>Windows</p>
+					<p>Windows, Mac, Linux & <br> Browser </p>
 				</div>
 			</div>
 			
-		</div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+			<div class="row">
+				<!-- Risen from Hell -->
+				<div class="col-1">
+					<a href="Projects/Project; Neon Racer.html"><img src="images/Development Hub/Project Neon Racer/Cover Img.gif" alt=""></a>
+					<h1>Neon Racer</h1>
+					<p>VR & Windows</p>
+				</div>
+			</div>
 
+		</div>
+	<!-- #endregion -->
+	
+	<!-- #region About Me -->
+	<section class="brief-about">
+		<h3>About Me</h3>
+		<p>I'm a passionate game developer specialising in Unity Development,
+			as well as UI and AI programming. With deep love for interactive storytelling and immersive
+			experiences, I strive to create games that captivate players and push boundaries.</p>
+			<a class="btn" href="About.html">Read More!</a>
+	</section>
+	<!-- #endregion -->	
 	
 	
-	
-	
-	
+	<p id="bottom"></p>
+	</div>
+
 	
 	
 	
