@@ -11,7 +11,7 @@ body {
 
 
 /* Desktop Screen CSS */
-@media only screen and (min-width: 971px) {
+@media only screen and (min-width: 1300px) {
 /* #region General CSS */
     * {
         margin: 0;
@@ -24,6 +24,9 @@ body {
     }
     .Desktop {
         display: block;
+    }
+    .Tablet {
+        display: none;
     }
     .Mobile {
         display: none;
@@ -581,7 +584,7 @@ body {
 }
 
 /* Mobile Screen CSS */
-@media only screen and (max-width: 971px) {
+@media only screen and (max-width: 1299px) {
 /* #region General CSS */
     * {
         margin: 0;
@@ -593,6 +596,9 @@ body {
         height: 600px;
     }
     .Desktop {
+        display: none;
+    }
+    .Tablet {
         display: none;
     }
     .Mobile {
@@ -1140,3 +1146,4 @@ body {
 /* #endregion */
 
 }
+
