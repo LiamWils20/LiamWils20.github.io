@@ -758,7 +758,6 @@ body {
     .row {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: space-around;
     }
     .col-1 {
