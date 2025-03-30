@@ -757,6 +757,7 @@ body {
 /* #region Row/Col-1 CSS */
     .row {
         display: flex;
+        margin-left: 10%;
         flex-wrap: wrap;
         justify-content: space-around;
     }
