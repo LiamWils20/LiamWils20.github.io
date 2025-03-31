@@ -34,6 +34,43 @@ nav{
 	font-size: 30px;
 }
 
+/* #region Column */
+
+	.row-column{
+		width: 100%;
+		min-height: 400px;
+	}
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+	.text-column-Left{
+		margin: auto;
+  		width: 50%;
+  		padding-top: 50px;
+	}
+
+	.text-column-Right{
+		position: absolute;
+  		right: 0px;
+ 		width: 300px;
+  		border: 3px solid #73AD21;
+  		padding: 10px;
+	}
+  
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* #endregion */
+
 .eye img{
 	width: 50%;
 	border-radius: 30px;
@@ -380,6 +417,25 @@ nav ul li a{
 	color: white;
 	
 }
+
+
+/* #region Column */
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+  
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* #endregion */
 
 a{
 	text-decoration: none;

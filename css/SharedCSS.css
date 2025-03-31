@@ -134,10 +134,20 @@ footer p {
 
 .divider{
     width: 35%; /* Adjust this value to control the divider's width */
-    height: 2px; /* Adjust this value to control the divider's height */
-    background-color: rgba(255, 255, 255, 0.5);/* Or any color you prefer */
+    height: 4px; /* Adjust this value to control the divider's height */
+    background-color: rgb(8, 0, 255);/* Or any color you prefer */
+    border-radius: 30px;
     margin: auto; /* Add some vertical spacing around the divider */
     float:center;
+}
+
+.blue-divider{
+    width: 10%; /* Adjust this value to control the divider's width */
+    height: 4px; /* Adjust this value to control the divider's height */
+    background-color: rgb(8, 0, 255);/* Or any color you prefer */
+    border-radius: 30px;
+    margin: auto; /* Add some vertical spacing around the divider */
+    float: left;
 }
 
 /* Devlog styles */

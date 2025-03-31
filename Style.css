@@ -25,9 +25,7 @@ body {
     .Desktop {
         display: block;
     }
-    .Tablet {
-        display: none;
-    }
+
     .Mobile {
         display: none;
     }
@@ -114,6 +112,9 @@ body {
 
 /* #region Column */
 
+    .row-column{
+        width:100%;
+    }
     /* Create two equal columns that floats next to each other */
     .column {
         float: left;
