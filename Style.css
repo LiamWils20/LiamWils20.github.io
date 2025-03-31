@@ -758,8 +758,8 @@ body {
 /* #region Row/Col-1 CSS */
     .row {
         display: flex;
-        margin-left: 10%;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: space-around;
     }
     .col-1 {
@@ -768,22 +768,22 @@ body {
         margin: 20px;
         min-width: 100px;
         transition: transform 0.5s;
-        border-radius: 30px;
+        border-radius: 10px;
     }
     .col-1 img {
-        width: 200px;
-        height: 120px;
-        border-radius: 30px;
-        border: 5px solid black;
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+        border: 2px solid black;
     }
     .col-1 h1 {
         text-align: left;
-        font-size: 25px;
+        font-size: 15px;
         padding-left: 10px;
     }
     .col-1 p {
         text-align: left;
-        font-size: 14px;
+        font-size: 9px;
         padding-left: 10px;
     }
     .col-1:hover {
