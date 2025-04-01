@@ -135,6 +135,7 @@ body {
 
     a {
         text-decoration: none;
+        color: #e73c3c;
     }
     p {
         font-size: 20px;
@@ -339,7 +340,6 @@ body {
 
 /* #region Table CSS */
     table {
-        width: 100%;
         border-collapse: collapse;
     }
     th {
@@ -351,24 +351,6 @@ body {
     td {
         text-align: left;
         padding: 10px 5px;
-    }
-    td select {
-        width: 225px;
-        height: 30px;
-        padding: 5px;
-    }
-    td input {
-        width: 225px;
-        height: 30px;
-        padding: 5px;
-    }
-    td a {
-        color: #3CE7D1;
-    }
-    td img {
-        width: 80px;
-        height: 80px;
-        margin-right: 10px;
     }
 /* #endregion */
 

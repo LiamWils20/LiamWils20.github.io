@@ -10,6 +10,7 @@
 	<!-- CSS Links -->
 	<link rel="stylesheet" href="../css/Game Development Page CSS.css?v=1.0">
 	<link rel="stylesheet" href="../css/SharedCSS.css?v=1.0">
+	<link rel="stylesheet" href="../css/Filter.css?v=1.0">
 </head>
 <body>
 	<style>
@@ -54,13 +55,31 @@
 		</div>
 	</div>
 
+	<div class="desktop">
+		<div class="filter">
+			<h3>Game Details</h3>
+			<p><a href="#about">About</a></p>
+			<p><a href="#controls">Controls</a></p>
+			<p><a href="#team">The Team</a></p>
+			<p><a href="#bugs">Known Bugs</a></p>
+			<h3>My Contributions</h3>
+			<p><a href="#project">Project Outline</a></p>
+			<p><a href="#ui">UI Programming</a></p>
+			<p><a href="#arrow">Arrow Attack System</a></p>
+			<p><a href="#sfx">SFX / World Objects Programmer</a></p>
+			<p><a href="#anims">Animations</a></p>
+			<p><a href="#judgment">Final Judgment</a></p>
+		</div>
+	</div>
+
 	<div class="small-container">
 	<div class="Desktop">
 	<div class="title">
 <!-- Banner Section -->
 		<img class="banner" src="../images/Development Hub/Project Realm Runner/Banner Image.png" alt="">
-			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Game Build</a> <br>
-			<a class="btn" target="_blank" href="https://github.com/robinpound/Realm-Runner/tree/Development-Rev2" >Source Files</a> <br>
+			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Play Game</a>
+			<a class="btn" target="_blank" href="https://github.com/robinpound/Realm-Runner/tree/Development-Rev2" >Source Files</a>
+			
 	</div>
 	
 <!-- Screenshot Section -->
@@ -76,93 +95,136 @@
 		</div>
 	</div>
 	
-	<p>Realm Runner is a collaborative project made within Unity. <br> For more details about the persons
-	involved and their <br> contributions, check out the team section below!</p>
-	
+<!-- About the Game Section-->
+	<h3 id="about">About the Game</h3> <br>
+	<div class="blue-divider" ></div> <br>
+	<p>Realm Runner is a platforming-action-puzzle adventure where you will explore different dimension
+		to retrieve lost fragments, the source of like in this universe. Hurry! You must save this reality
+		from the threat lurking within the dark.</p>
+
+
 	<br> <br>
-<!-- About Section -->
-	<h3 id="Contents">Table of Contents</h3> <br>
-    <li><a href="#Baseline">Baseline</a></li>
-	<li><a href="#About">About</a></li>
-	<li><a href="#Outline">Contribution Outline</a></li>
-	<li><a href="#UI">UI Programmer</a></li>
-	<li><a href="#Combat">Combat System</a></li>
-	<li><a href="#Sound & World">Sound & World Objects Programmer</a></li>
-	<li><a href="#Anims">Animations</a></li>
-	<li><a href="#Death">Death Rigging</a></li>
-	<li><a href="#Judgement">Final Judgement</a></li>
+<!-- Controls Section -->
+	<h3 id="controls">Game Controls</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>WASD - Movement</p>
+	<p>Space - Jump</p>
+	<p>Hold RMB - Aim</p>
+	<p>Click LMB - Shoot (Only Whilst Aiming)</p>
+	<p>Escape - Pause</p>
+
+	<br> <br>
+<!-- The Team -->
+	<h3 id="team">The Team</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<table>
+		<tr>
+		  <th>Member</th>
+		  <th>Contribution</th>
+		</tr>
+		<tr>
+		  <td><a href="https://mikehayes.itch.io">Michael Hayes</a></td>
+		  <td>- Level Designer <br> 
+			  - Puzzle, Sound, World Objects and Events Programmer <br> 
+			  - Player UI icons Designer <br> 
+			  - Portal Programmer <br> 
+			  - L-System Programmer</td>
+		</tr>
+		<tr>
+		  <td><a href="https://robinpound.itch.io">Robin Pound</a></td>
+		  <td>- Enemy AI Programmer <br> 
+			  - Lava Realm Level Designer <br> 
+			  - Tool Programmer <br> 
+			  - Water and Lava Shaders <br>
+			  - L-System Programmer</td>
+		</tr>
+		<tr>
+			<td><a href="../index.html">Liam Wilson</a></td>
+			<td>- UI Programmer, Main Menu Scene and Menus Designer <br> 
+				- Bow and Arrow Attack Programmer <br> 
+				- Sound & World Objects Programmer <br> 
+				- Animations & Death Rigging</td>
+		</tr>
+		<tr>
+			<td><a href="https://j-misterio1.itch.io">Jesus Miguel</a></td>
+			<td>- Player Character Controller Programmer <br> 
+				- Camera Programmer <br> 
+				- Animations <br> 
+				- Shaders for fragment light and hub world torches</td>
+		</tr>
+		<tr>
+			<td><a href="https://laniproductions.wixsite.com/my-site">Lani Morning</a></td>
+			<td>- Sound Engineer (Excluding main menu and boss battle music)</td>
+		</tr>
+	  </table>
+
+	<br> <br>
+<!-- Known Bugs Section -->
+	<h3 id="bugs">Known Bugs</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>WASD - Movement</p>
+	<p>Space - Jump</p>
+	<p>Hold RMB - Aim</p>
+	<p>Click LMB - Shoot (Only Whilst Aiming)</p>
+	<p>Escape - Pause</p>
+
+	  <br> <br>
+<!-- #region Project Outline -->
+	<h3 id="sfx">Project Outline</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>Realm Runner is a project developed as part of an educational course conducted by SAE Insitute.
+		A team of 5 students from SAE was grouped together and required to create a video game. The game
+		had to be made in the style of either Crash Bandicoot, or Super Mario 64.  My team decided, to 
+		create a game in the style of Super Mario 64.</p>
+	<br>
+	<p>The game's development was 13 weeks in total. Meaning 13 weeks, for planning / design, pre-production, prototype,
+		testing and then release. Not a lot of time is it? My responisbilities are listed above, but I'll list them again here.</p>
+	<p>- UI Programmer, Main Menu Scene and Menus Designer <br> 
+		- Bow and Arrow Attack Programmer <br> 
+		- Sound & World Objects Programmer <br> 
+		- Animations & Death Rigging</p>
+	<br>
+	<p>For these contribution entries I aim to go into great detail explaning everything I did. </p>
+
+<!-- #endregion -->
+
 <br> <br>
-<!-- Baseline -->
-	<h2 id="Baseline">Baseline</h2> 
-	<p>This project was made as a university project within a 13 week time frame. 
-        We were given teams to work amongst, and was tasked with the creation of a game,
-        which was based on either Super Mario 64, or Crash Bandicoot. Our team chose 
-        Super Mario 64. </p>
+<!-- #region UI Development -->
+	<h3 id="ui">UI Development</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>Whilst everyone else was either creating characters or level design, I began work on the main menu scene, beginning it's journey of course by looking
+		for assets to use. 
+	</p>
+
+<!-- #endregion -->
 
 <br>
-<!-- About Section -->
-	<h2 id="About">About</h2>
-	<p>Realm Runner is a platforming-action-puzzle adventure where <br> 
-	you will explore different dimension to retrieve lost fragments, <br>
-	the source of life in this universe. Hurry! You must save this <br> 
-	reality from the threat lurking within the dark.</p>
-	<br>
-    <p>Traverse your way through different realms of the universe, <br> 
-	using your skills of platforming, solving puzzles and defeating <br> 
-	enemies. Doing all this whilst collecting coins and fragments to <br> 
-	progress through the realms right up until the final boss</p>
+<!-- #region UI Development -->
+	<h3 id="arrow">Arrow Attack System</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>..</p>
 
-<br>
-<!-- Contribution Outline -->
-	<h2 id="Outline">Contribution Outline</h2>
-	<p>This section is a brief outline of my duties regarding this project, 
-		if you want more detailed version you could keep scrolling down, or 
-		revisit the table of contents above.</p>
-	</p>
-	<li>UI Programmer - Menus, Health, Fragment Collection etc</li>
-	<li>Combat System - Bow & Arrow - Attack Mechanics</li>
-	<li>Sound & World Objects Programmer</li>
-	<li>Animations</li>
-	<li>Player Character - Death Rigging</li>
-<br>
-<!-- #region UI Programming -->
-	<h2 id="UI">My Duty; UI Programmer</h2>
-	<p>This section is a detailed explanation of what I did as the UI programmer, 
-		on this project. At the end, there will be a section of things I did which 
-		got cut or postponed due to scope and time remaining. 
-	</p>
+<!-- #endregion -->
+
 	<br>
-	<!-- Menu Description -->
-	<h2>Menus</h2>
-	<p>My first obligation for this project was creating the main menu. Everything regarding the Main Menu
-		went into one singular script, which I no longer do but it's what I did at the time of this project. 
-		For every button I had on the main menu, I created a function, each funtion then ran the buttons specific needs
-		for example, the "Start Game" button, had the code line "Scene.Manager.LoadScene("HubLevelWithAssets");". 
-		Each button had their own unique funtion, I won't go through them all as most are self explanatory. 
-	</p> <br>
-	<div class="eye">
-		<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn10.png" alt="">
-	</div>
-	<p> The pause menu also uses the same premise. </p> <br>
-	<div class="eye">
-		<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn11.png" alt="">
-	</div>
-	<br>
-	<h2>Death Screen</h2>
-	<p>I also decided to create a player death screen, which allowed the player to restart their current level 
-		or head back to the main menu, and asks them to confirm if they wish to head back to the main menu. 
-	This does, use a similar system in terms of button programming, as the main and pause menus do. </p> <br>
-	<div class="eye">
-		<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn12.png" alt="">
-	</div>
-	<br>
-	<h2>Death Screen</h2>
-	<p>I also decided to create a player death screen, which allowed the player to restart their current level 
-		or head back to the main menu, and asks them to confirm if they wish to head back to the main menu. 
-	This does, use a similar system in terms of button programming, as the main and pause menus do. </p> <br>
-	<div class="eye">
-		<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn12.png" alt="">
-	</div>
+<!-- #region SFX Development -->
+	<h3 id="sfx">SFX Programming</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
+
+<!-- #endregion -->
+
+<!-- #region Anmations Development -->
+	<h3 id="anims">Animation Development</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
+
+<!-- #endregion -->
+
+<!-- #region Anmations Development -->
+	<h3 id="judgment">My Final Judgement</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
 
 <!-- #endregion -->
 
