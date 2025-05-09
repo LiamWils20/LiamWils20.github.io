@@ -154,6 +154,7 @@ body {
     h3 {
         font-weight: bold;
         font-size: 30px;
+        text-shadow: 3px 3px black;
     }
     h4 {
         font-weight: bold;
@@ -564,6 +565,45 @@ body {
     text-shadow: 1px 1px black;
 }
 /* #endregion */
+
+/* #region Row/Col-1 CSS */
+.social-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.social-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 30px;
+    min-width: 200px;
+    transition: transform 0.5s;
+    border-radius: 30px;
+}
+.social-box h1 {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.social-box p {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.social-box .btn {
+    text-align: center;
+    position: relative;
+    left: 25%;
+}
+.social-box li {
+    text-align: left;
+}
+.social-box:hover {
+    transform: translateY(-5px);
+}
+/* #endregion */
+
 
 }
 

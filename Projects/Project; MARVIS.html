@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Browser tab title and image -->
+	<title>Liam's Portfolio</title>
+	<link rel="icon" href="images/Logo.png">
+	
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="../css/Game Development Page CSS.css?v=1.0">
+	<link rel="stylesheet" href="../css/SharedCSS.css?v=1.0">
+	<link rel="stylesheet" href="../css/Filter.css?v=1.0">
+</head>
+<body>
+	<style>
+		body {
+			background-image: url("../images/Background.png"); /* Replace with the actual path to your image */
+			background-size: cover; /* Optional: Adjust as needed */
+			background-repeat: no-repeat; /* Optional: Prevent tiling */
+			background-attachment: fixed; /* Optional: Fix the background image */
+		}
+	</style>
+
+	
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				
+		<!-- Navigation bar section -->
+				<nav>
+					<ul>
+						<div class="Desktop">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../Project Gallery.html">Projects</a></li>
+							<li><a href="../About.html">About</a></li>
+						    <li><a href="../Blog.html">Blog</a></li>
+							<li><a href="freelance.html">Freelance</a></li>
+						</div>
+					</ul>
+				</nav>
+				
+				<div class="Mobile">
+					<div class="dropdown">
+						<button class="dropbtn"><img src="../images/Menu.png" width="50px" height="50px"></button>
+				
+						<div class="dropdown-content">
+							<a href="../index.html">Home</a>
+							<a href="../Project Gallery.html">Projects</a>
+							<a href="../About.html">About</a>
+						    <a href="../Blog.html">Blog</a>
+							<a href="freelance.html" target="_blank">Freelance</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="desktop">
+		<div class="filter">
+			<h3>Game Details</h3>
+			<p><a href="#about">About</a></p>
+			<p><a href="#controls">Controls</a></p>
+			<p><a href="#team">The Team</a></p>
+			<p><a href="#bugs">Known Bugs</a></p>
+			<h3>My Contributions</h3>
+			<p><a href="#project">Project Outline</a></p>
+			<p><a href="#ui">UI Programming</a></p>
+			<p><a href="#arrow">Arrow Attack System</a></p>
+			<p><a href="#sfx">SFX / World Objects Programmer</a></p>
+			<p><a href="#anims">Animations</a></p>
+			<p><a href="#judgment">Final Judgment</a></p>
+		</div>
+	</div>
+
+	<div class="small-container">
+	<div class="Desktop">
+	<div class="title">
+<!-- Banner Section -->
+		<img class="banner" src="../images/Development Hub/Project Realm Runner/Banner Image.png" alt="">
+			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Play Game</a>
+			<a class="btn" target="_blank" href="https://github.com/robinpound/Realm-Runner/tree/Development-Rev2" >Source Files</a>
+			
+	</div>
+	
+<!-- Screenshot Section -->
+	<div class="row-scrn">
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn1.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn2.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn3.png" alt="">
+		</div>
+	</div>
+	
+<!-- About the Game Section-->
+	<h3 id="about">About the Game</h3> <br>
+	<div class="blue-divider" ></div> <br>
+	<p>Realm Runner is a platforming-action-puzzle adventure where you will explore different dimension
+		to retrieve lost fragments, the source of like in this universe. Hurry! You must save this reality
+		from the threat lurking within the dark.</p>
+
+
+	<br> <br>
+<!-- Controls Section -->
+	<h3 id="controls">Game Controls</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>WASD - Movement</p>
+	<p>Space - Jump</p>
+	<p>Hold RMB - Aim</p>
+	<p>Click LMB - Shoot (Only Whilst Aiming)</p>
+	<p>Escape - Pause</p>
+
+	<br> <br>
+<!-- The Team -->
+	<h3 id="team">The Team</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<table>
+		<tr>
+		  <th>Member</th>
+		  <th>Contribution</th>
+		</tr>
+		<tr>
+		  <td><a href="https://mikehayes.itch.io">Michael Hayes</a></td>
+		  <td>- Level Designer <br> 
+			  - Puzzle, Sound, World Objects and Events Programmer <br> 
+			  - Player UI icons Designer <br> 
+			  - Portal Programmer <br> 
+			  - L-System Programmer</td>
+		</tr>
+		<tr>
+		  <td><a href="https://robinpound.itch.io">Robin Pound</a></td>
+		  <td>- Enemy AI Programmer <br> 
+			  - Lava Realm Level Designer <br> 
+			  - Tool Programmer <br> 
+			  - Water and Lava Shaders <br>
+			  - L-System Programmer</td>
+		</tr>
+		<tr>
+			<td><a href="../index.html">Liam Wilson</a></td>
+			<td>- UI Programmer, Main Menu Scene and Menus Designer <br> 
+				- Bow and Arrow Attack Programmer <br> 
+				- Sound & World Objects Programmer <br> 
+				- Animations & Death Rigging</td>
+		</tr>
+		<tr>
+			<td><a href="https://j-misterio1.itch.io">Jesus Miguel</a></td>
+			<td>- Player Character Controller Programmer <br> 
+				- Camera Programmer <br> 
+				- Animations <br> 
+				- Shaders for fragment light and hub world torches</td>
+		</tr>
+		<tr>
+			<td><a href="https://laniproductions.wixsite.com/my-site">Lani Morning</a></td>
+			<td>- Sound Engineer (Excluding main menu and boss battle music)</td>
+		</tr>
+	  </table>
+
+	<br> <br>
+<!-- Known Bugs Section -->
+	<h3 id="bugs">Known Bugs</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>WASD - Movement</p>
+	<p>Space - Jump</p>
+	<p>Hold RMB - Aim</p>
+	<p>Click LMB - Shoot (Only Whilst Aiming)</p>
+	<p>Escape - Pause</p>
+
+	  <br> <br>
+<!-- #region Project Outline -->
+	<h3 id="sfx">Project Outline</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>Realm Runner is a project developed as part of an educational course conducted by SAE Insitute.
+		A team of 5 students from SAE was grouped together and required to create a video game. The game
+		had to be made in the style of either Crash Bandicoot, or Super Mario 64.  My team decided, to 
+		create a game in the style of Super Mario 64.</p>
+	<br>
+	<p>The game's development was 13 weeks in total. Meaning 13 weeks, for planning / design, pre-production, prototype,
+		testing and then release. Not a lot of time is it? My responisbilities are listed above, but I'll list them again here.</p>
+	<p>- UI Programmer, Main Menu Scene and Menus Designer <br> 
+		- Bow and Arrow Attack Programmer <br> 
+		- Sound & World Objects Programmer <br> 
+		- Animations & Death Rigging</p>
+	<br>
+	<p>For these contribution entries I aim to go into great detail explaning everything I did. </p>
+
+<!-- #endregion -->
+
+<br> <br>
+<!-- #region UI Development -->
+	<h3 id="ui">UI Development</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>Whilst everyone else was either creating characters or level design, I began work on the main menu scene, beginning it's journey of course by looking
+		for assets to use. 
+	</p>
+
+<!-- #endregion -->
+
+<br>
+<!-- #region UI Development -->
+	<h3 id="arrow">Arrow Attack System</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>..</p>
+
+<!-- #endregion -->
+
+	<br>
+<!-- #region SFX Development -->
+	<h3 id="sfx">SFX Programming</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
+
+<!-- #endregion -->
+
+<!-- #region Anmations Development -->
+	<h3 id="anims">Animation Development</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
+
+<!-- #endregion -->
+
+<!-- #region Anmations Development -->
+	<h3 id="judgment">My Final Judgement</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<p>...</p>
+
+<!-- #endregion -->
+
+
+
+	</div>
+
+
+
+
+
+
+	<div class="Mobile">
+		<div class="title">
+	<!-- Banner Section -->
+			<img class="banner" src="../images/Development Hub/Project Realm Runner/Banner Image.png" alt="">
+			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Play Now</a> <br>
+		</div>
+
+	<!-- Screenshot Section -->
+	<div class="row-scrn">
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn1.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn2.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn3.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn4.png" alt="">
+		</div>
+		<div class="scrn-col">
+			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn6.png" alt="">
+		</div>
+	</div>
+
+<p>Realm Runner is a collaborative project made within Unity. <br> For more details about the persons
+involved and their <br> contributions, check out the team section below!</p>
+
+<br> <br>
+<!-- About Section -->
+<h3>About</h3> <br>
+<p>Realm Runner is a platforming-action-puzzle adventure where <br> 
+you will explore different dimension to retrieve lost fragments, <br>
+the source of life in this universe. Hurry! You must save this <br> 
+reality from the threat lurking within the dark.</p>
+<br>
+<p>Traverse your way through different realms of the universe, <br> 
+using your skills of platforming, solving puzzles and defeating <br> 
+enemies. Doing all this whilst collecting coins and fragments to <br> 
+progress through the realms right up until the final boss</p>
+<br> <br>
+<!-- My Contributions Section -->
+<h3>My Contributions, in detail</h3> <br>
+<h2>Baseline</h2> 
+<p>This project was made as a university project within a 13 week time frame. 
+We were given teams to work amongst, and was tasked with the creation of a game,
+which was based on either Super Mario 64, or Crash Bandicoot. Our team chose 
+Super Mario 64. 
+</p>
+<br> 
+<p>You can view the rest of the team by scrolling further, or click <a href="#bottom">here</a> to be transported there. </p>
+<br>
+<p>Within these 13 weeks, we each had many tasks we were require to acomplish mine were as follows;</p>
+<li>UI Programmer - Menus, Health, Fragment Collection etc</li>
+<li>Combat System - Bow & Arrow - Attack Mechanics</li>
+<li><a href="#Sound & World">Sound & World Objects Programmer</a></li>
+<li>Animations</li>
+	</div>	
+</div>
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</bod>
+</html>
