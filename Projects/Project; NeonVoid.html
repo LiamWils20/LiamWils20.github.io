@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Browser tab title and image -->
 	<title>Liam's Portfolio</title>
-	<link rel="icon" href="../images/Logo.png">
+	<link rel="icon" href="images/Logo.png">
 	
 	<!-- CSS Links -->
 	<link rel="stylesheet" href="../css/Game Development Page CSS.css?v=1.0">
@@ -22,6 +22,36 @@
 		}
 	</style>
 
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("July 31, 2025 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
 	
 	<div class="header">
 		<div class="container">
@@ -61,11 +91,12 @@
 	<div class="Desktop">
 	<div class="title">
 <!-- Banner Section -->
-		<img class="banner" src="../images/Project Realm Runner/Banner Image.png" alt="">
-			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Play Game</a>
+		<img class="banner" src="../images/Project NeonVoid/Banner Image.png" alt="NeonVoid">
+			<a class="btn" target="_blank" href="#">Come back in <p id="demo"></p></a>
+			
 	</div>
 	
-<!-- Screenshot Section -->
+<!-- Screenshot Section
 	<div class="row-scrn">
 		<div class="scrn-col">
 			<img src="../images/Project Realm Runner/Gallery/Scrn1.png" alt="">
@@ -76,114 +107,59 @@
 		<div class="scrn-col">
 			<img src="../images/Project Realm Runner/Gallery/Scrn3.png" alt="">
 		</div>
-	</div>
-
-	<h3>About</h3> <br>
+	</div>-->
+	
+<!-- About the Game Section-->
+	<h3>About NeonVoid</h3> <br>
 	<div class="blue-divider" ></div> <br>
-	<p>Realm Runner s a platforming-action-puzzle adventure where you will explore different dimensions to retrieve lost fragments,
-		the source of life in this universe. Hurry! You must save this reality from the threat lurking within the dark.</p>
+	<p>NeonVoid is nothing like anything before. It's a fast-paced, racing simulator for on the go gamers. 
+        Download, load in, and fly your very own spacecraft through various terrains, and avoid as many obstacles
+        as humanly possible. Race to gain the highest score, beat your own or compete with friends,
+        and others from across the globe. 
+    </p>
 	<br> <br>
 
 	<h3>Project Backstory</h3> <br>
 	<div class="blue-divider"></div> <br>
-	<p>Realm Runner is a collaborative project made within Unity. For more details about persons involved and their contributions,
-		check out <a href="the team">the team</a> section below.</p> <br>
-	<p>Realm Runner was created as a school project within 13 weeks. It is no longer in development, however we may one day return to it if the stars align. 
-		If you have any feedback please fill out the following form, <a href="https://forms.gle/N34RcY8kMuJftUrx5">https://forms.gle/N34RcY8kMuJftUrx5</a>.
-	</p>
+	<p>NeonVoid is a project to be developed as a way to learn and gain experinece developing mobile games, for both Android and iPhone. 
+        From this project I aim to learn ways to set-up mobile projects, best movement types for mobile, how to create and use touch sensors as well as
+        handle held haptics for player movement within the game. Anything else I learn is a bonus.
+    </p>
+    <br>
+    <p>If you wish to follow along the development you are more than welcome to <a href="../Devlogs/NeonVoid-Devlogs.html">here</a>.</p>
 	<br> <br>
-	
+
 	<h3>Controls</h3> <br>
 	<div class="blue-divider"></div> <br>
 	<div class="control">
 		<table>
 			<tr>
-		  		<td>WASD</td>
+		  		<td>Swipe Motion</td>
 		  		<td>Movement</td>
 			</tr>
 			<tr>
-				<td>Space</td>
-				<td>Jump</td>
-			</tr>
-			<tr>
-				<td>Hold RMB</td>
-				<td>Aim</td>
-			</tr>
-			<tr>
-				<td>LMB</td>
-				<td>Shoot (Only While Aiming)</td>
-			</tr>
-			<tr>
-				<td>Escape</td>
-				<td>Pause</td>
+		  		<td>Double Swipe</td>
+		  		<td>Decorative Movements</td>
 			</tr>
 		</table>
 	</div>
-	<br> <br>
-	
-	<h3 id="the team">The Team</h3> <br>
+    <br> <br>
+
+	<h3>Known Bugs</h3> <br>
 	<div class="blue-divider"></div> <br>
-	<div class="the-team">
-		<table>
-			<tr>
-		  		<td>Liam Wilson</td>
-		  		<td><a href="../index.html">Portfolio</a></td>
-			</tr>
-			<tr>
-		  		<td>Michael Hayes</td>
-		  		<td><a href="https://mikehayes.itch.io">Portfolio</a></td>
-			</tr>
-			<tr>
-		  		<td>Robin Pound</td>
-		  		<td><a href="https://robinpound.itch.io">Portfolio</a></td>
-			</tr>
-			<tr>
-		  		<td>Jesus Miguel</td>
-		  		<td><a href="https://j-misterio1.itch.io">Portfolio</a></td>
-			</tr>
-			<tr>
-				<td>Lani Morning</td>
-				<td><a href="https://laniproductions.wixsite.com/my-site">Portfolio</a></td>
-			</tr>
-		</table>
-	</div>
+	<p>No bugs to list as of yet.</p>
 	<br> <br>
-	
-	<h3>Gallery</h3> <br>
+
+	<h3>To Come</h3> <br>
 	<div class="blue-divider"></div> <br>
-		<div class="gallery">
-		    <div class="gallery-col">
-			    <img src="../images/Project Realm Runner/Gallery/Scrn1.png" alt="">
-		    </div>
-		    <div class="gallery-col">
-			    <img src="../images/Project Realm Runner/Gallery/Scrn2.png" alt="">
-		    </div>
-		    <div class="gallery-col">
-			    <img src="../images/Project Realm Runner/Gallery/Scrn3.png" alt="">
-		    </div>
-			<div class="gallery-col">
-			    <img src="../images/Project Realm Runner/Gallery/Scrn4.png" alt="">
-		    </div>
-			<div class="gallery-col">
-		        <img src="../images/Project Realm Runner/Gallery/Scrn5.png" alt="">
-		    </div>
-			<div class="gallery-col">
-		        <img src="../images/Project Realm Runner/Gallery/Scrn6.png" alt="">
-		    </div>
-			<div class="gallery-col">
-		        <img src="../images/Project Realm Runner/Gallery/Scrn7.png" alt="">
-		    </div>
-			<div class="gallery-col">
-		        <img src="../images/Project Realm Runner/Gallery/Scrn8.png" alt="">
-		    </div>
-			<div class="gallery-col-blank">
-		        
-		    </div>
-	    </div>
+	<br> <br>
 
+	<h3>Devlog</h3> <br>
+	<div class="blue-divider"></div> <br>
+	<li><a href="../Devlogs/NeonVoid-Devlogs.html">Written Logs</a></li>
+	<li><a href="https://www.youtube.com/@wibistudio" target="_blank">Video Logs</a></li>
 
-
-	</div>
+</div>
 
 
 
@@ -193,26 +169,26 @@
 	<div class="Mobile">
 		<div class="title">
 	<!-- Banner Section -->
-			<img class="banner" src="../images/Development Hub/Project Realm Runner/Banner Image.png" alt="">
+			<img class="banner" src="../images/Project Realm Runner/Banner Image.png" alt="">
 			<a class="btn" target="_blank" href="https://mikehayes.itch.io/realm-runner" >Play Now</a> <br>
 		</div>
 
 	<!-- Screenshot Section -->
 	<div class="row-scrn">
 		<div class="scrn-col">
-			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn1.png" alt="">
+			<img src="../images/Project Realm Runner/Gallery/Scrn1.png" alt="">
 		</div>
 		<div class="scrn-col">
-			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn2.png" alt="">
+			<img src="../images/Project Realm Runner/Gallery/Scrn2.png" alt="">
 		</div>
 		<div class="scrn-col">
-			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn3.png" alt="">
+			<img src="../images/Project Realm Runner/Gallery/Scrn3.png" alt="">
 		</div>
 		<div class="scrn-col">
-			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn4.png" alt="">
+			<img src="../images/Project Realm Runner/Gallery/Scrn4.png" alt="">
 		</div>
 		<div class="scrn-col">
-			<img src="../images/Development Hub/Project Realm Runner/Gallery/Scrn6.png" alt="">
+			<img src="../images/Project Realm Runner/Gallery/Scrn6.png" alt="">
 		</div>
 	</div>
 

@@ -132,7 +132,7 @@ body {
 
 /* #endregion */
 
-/* #region Basic Text CSS */
+/* #region Text CSS */
 
     a {
         text-decoration: none;
@@ -191,6 +191,12 @@ body {
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .col-1-blank{
+        width: 300px;
+        padding: 5px;
+        margin: 30px;
+        border-radius: 30px;
     }
     .col-1 {
         background-color: rgba(0, 0, 0, 0.5);
@@ -277,23 +283,11 @@ body {
         padding: 9px 30px;
         border-radius: 30px;
         border: 2px solid black;
-        transition: background 0.5s;
+        transition: transform 0.5s;
     }
     .btn:hover {
-        background-image: linear-gradient(to right, rgb(95, 0, 95), rgb(1, 177, 177));
+        transform: scale(1.1);
         cursor: pointer;
-    }
-
-    .btn-2 {
-        display: inline-block;
-        background: #D7D7D7;
-        color: black;
-        padding: 9px 30px;
-        border-radius: 30px;
-        transition: background 0.5s;
-    }
-    .btn-2:hover {
-        background: #797979;
     }
 /* #endregion */
 

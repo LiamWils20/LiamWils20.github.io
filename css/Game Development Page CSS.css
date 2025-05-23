@@ -23,348 +23,318 @@ body {
 	display: none;
 }
 
-.navbar{
-	display: flex;
-	align-items: center;
-	padding: 20px;	
-}
-nav{
-	flex: 1;
-	text-align: center;
-	font-size: 30px;
-}
-
-/* #region Column */
-
-	.row-column{
-		width: 100%;
-		min-height: 400px;
-	}
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-    }
-  
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-/* #endregion */
-
-.eye img{
-	width: 50%;
-	border-radius: 30px;
-	border: 2px solid black;
-}
-
-nav ul{
-	display: inline-block;
-	list-style-type: none;
-}
-nav ul li{
-	display: inline-block;
-	margin: 20px;
-}
-nav ul li a{
-	text-decoration: none;
-	color: #3CE7D1;
-	text-shadow: 3px 3px black;
-}
-nav li{
-	transition: transform 0.5s;
-}
-
-nav li:hover{
-	transform: translateY(-5px);
-}
-
-a{
-	color: #e73c3c;
-	text-decoration: none;
-}
-p{
-	font-size: 20px;
-}
-h1{
-	font-weight: bold;
-	font-size: 10px;
-}
-h2{
-	font-weight: bold;
-	font-size: 20px;
-}
-h3{
-	font-weight: bold;
-	font-size: 30px;
-}
-
-h4{
-	font-weight: bold;
-	font-size: 40px;
-}
-h5 {
-	font-weight: bold;
-	font-size: 50px;
-}
-h6 {
-	font-weight: bold;
-	font-size: 60px;
-}
-.container{
-	max-width: 1300px;
-	margin: auto;
-	padding-left: 0px;
-}
-.row{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;	
-}
-/*---------- Button CSS ----------*/
-.btn{
-	display: inline-block;
-	background-image: linear-gradient(to right, purple , aqua);
-	color: black;
-	font-weight: bold;
-	padding: 9px 30px;
-	margin: 15px 0;
-	border-radius: 30px;
-	border: 2px solid black;
-	transition: background 0.5s;
-}
-.btn:hover{
-	background-image: linear-gradient(to right, aqua , purple);
-}
-/*---------- End Button CSS ----------*/
 .header row{
 	margin-top: 70px;
 	
 }
-.small-container{
-	background-color: rgb(0, 0, 0, 0.5);
-	max-width: 1080px;
-	margin: auto;
-	padding-left: 25px;
-	padding-right: 25px;
-	isolation: isolate;
-}
 
-.small-container{
-	padding: 15px 20px;
-	text-align: left;
-	font-size: 20px;
-	line-height: 25px;
-	border-radius: 30px;
-	max-height: auto;
-}
-.col-4{
-	flex-basis: 30%;
-	max-width: 250px;
-	margin-bottom: 50px;
-	transition: transform 0.5s;
-	text-align: left;
-}
-.col-4 img{
-	width: 100%;
-	max-height: 125px;
-	border-radius: 30px;
-	border: 2px solid black;
-}
-.col-4 p {
-	font-size: 20px;
-}
-.col-4 li {
-	text-align: left;
-}
-.col-4:hover {
-	transform: scale(1.5);
-}
+/* #region Nav Bar CSS */
+	.navbar{
+		display: flex;
+		align-items: center;
+		padding: 20px;	
+	}
+	nav{
+		flex: 1;
+		text-align: center;
+		font-size: 30px;
+	}
+	nav ul{
+		display: inline-block;
+		list-style-type: none;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 20px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #3CE7D1;
+		text-shadow: 3px 3px black;
+	}
+	nav li{
+		transition: transform 0.5s;
+	}
+	nav li:hover{
+		transform: translateY(-5px);
+	}
+/* #endregion */
 
-.col-1{
-	padding-right: 10px;
-	min-width: 100px;
-	transition: transform 0.5s;
-	text-align: left;
-}
-.col-1 img{
-	width: 100%;
-	max-height: 125px;
-	
-}
-.col-1 p {
-	font-size: 20px;
-}
-.col-1 li {
-	text-align: left;
-}
-.col-1:hover {
-	transform: translateY(-5px);
-}
+/* #region Containor CSS */
+	.container{
+		max-width: 1300px;
+		margin: auto;
+		padding-left: 0px;
+	}
+	.small-container{
+		background-color: rgb(0, 0, 0, 0.5);
+		max-width: 1080px;
+		margin: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+		isolation: isolate;
+		padding: 15px 20px;
+		text-align: left;
+		font-size: 20px;
+		line-height: 25px;
+		border-radius: 30px;
+		max-height: auto;
+	}
+/* #endregion */
 
-.title{
-	text-align: center;
-	margin: 0 auto 80px;
-	position: relative;
-	line-height: 30px;
-}
-.title::after{
-	content: '';
-	width: 80px;
-	height: 5px;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.banner {
-	width: 100%;
-	height: 50%;
-	border-radius: 30px;
-}
+/* #region Text CSS */
+	a{
+		color: #e73c3c;
+		text-decoration: none;
+	}
+	p{
+		font-size: 20px;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 10px;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	h3{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	h4{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	h5 {
+		font-weight: bold;
+		font-size: 50px;
+	}
+	h6 {
+		font-weight: bold;
+		font-size: 60px;
+	}
+/* #endregion */
 
-/*----- Table CSS -----*/
+/* #region Button CSS */
+	.btn{
+		display: inline-block;
+		background-image: linear-gradient(to right, purple , aqua);
+		color: black;
+		font-weight: bold;
+		padding: 9px 30px;
+		margin: 15px 0;
+		border-radius: 30px;
+		border: 2px solid black;
+	    transition: transform 0.5s;
+    }
+    .btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+/* #endregion */
 
-table {
-	width: 65%;
-	border-collapse: collapse;
-}
+/* #region Column */
 
-table a:hover{
-	color: #7e1c1c;
-}
+	.row-column {
+  		display: flex;
+	}
+	.row-column img{
+		width: 50px;
+	}
+	.column-left {
+  		flex: 30%;
+		padding: 10px;
+	}
+	.column-right{
+		flex: 70%;
+		padding: 10px;
+	}
 
-th {
-	font-size: 20px;;
-	text-align: left;
-	padding: 5px;
-	font-weight: bold;
-}
+/* #endregion */
 
-td {
-	text-align: left;
-	padding: 10px 5px;	
-}
+/* #region Row & Col-1 CSS */ 
+	.row{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;	
+	}
+	.col-1{
+		padding-right: 10px;
+		min-width: 100px;
+		transition: transform 0.5s;
+		text-align: left;
+	}
+	.col-1 img{
+		width: 100%;
+		max-height: 125px;	
+	}
+	.col-1 p {
+		font-size: 20px;
+	}
+	.col-1 li {
+		text-align: left;
+	}
+	.col-1:hover {
+		transform: translateY(-5px);
+	}
+/* #endregion */
 
-/*----- Description Image CSS -------*/
-.desc{
-	max-width: 1000px;
-	max-height: 500px;
-}
+/* #region Title & Banner CSS */
+	.title{
+		text-align: center;
+		margin: 0 auto 80px;
+		position: relative;
+		line-height: 30px;
+	}
+	.title::after{
+		content: '';
+		width: 80px;
+		height: 5px;
+		border-radius: 5px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.banner {
+		width: 100%;
+		height: 50%;
+		border-radius: 30px;
+	}
+/* #endregion */
 
-.devlog{
-	width: 100%;
-	height: 1000px;
-	border-radius: 30px;
-}
+/* #region Table CSS*/
+	table {
+		width: 65%;
+		border-collapse: collapse;
+	}
+	table a:hover{
+		color: #7e1c1c;
+	}
+	th {
+		font-size: 20px;;
+		text-align: left;
+		padding: 5px;
+		font-weight: bold;
+	}
+	td {
+		text-align: left;
+		padding: 10px 5px;	
+	}
 
+	.control table{
+		width: 60%;
+		border-collapse: collapse;
+		border-radius: 30px;
+	}
+	.control th {
+		font-size: 25px;;
+		text-align: left;
+		padding: 5px;
+		font-weight: bold;
+	}
+	.control td {
+		text-align: left;
+		padding: 10px 5px;
+	}
+	.the-team table{
+		width: 40%;
+		border-collapse: collapse;
+		border-radius: 30px;
+	}
+/* #endregion */
 
+/* #region Description & Devlog */
+	.desc{
+		max-width: 1000px;
+		max-height: 500px;
+	}
+	.desc-text{
+		width: 700px;
+	}
+	.devlog{
+		width: 100%;
+		height: 1000px;
+		border-radius: 30px;
+	}
+/* #endregion */
 
-.desc-text{
-	width: 700px;
-}
+/* #region Dropdown CSS */
+	.dropbtn {
+		background: none;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.dropdown {
+  		position: relative;
+  		display: inline-block;
+	}
+	.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		text-align: left;
+  		background-color: #f1f1f1;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 		z-index: 5;
+	}
+	.dropdown-content a {
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+	}
+	.align-right{
+		justify-content: right;
+	}
 
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: grey;}
 
-/* Dropdown Button */
-.dropbtn {
-	background: none;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	padding: 9px 30px;
-	border-radius: 30px;
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+/* #endregion */
 
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  text-align: left;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 5;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.align-right{
-	justify-content: right;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: grey;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-
-
-/*--- Form CSS ---*/
-
-.form input{
-	display: inline-block;
-	text-align: left;
-	color: black;
-	padding: 9px 30px;
-	border-radius: 30px;
-}
-.form textarea{
-	display: inline-block;
-	text-align: left;
-	color: black;
-	padding: 9px 30px;
-	border-radius: 30px;
-}
-
-.form button{
-	display: inline-block;
-	background: green;
-	color: #fff;
-	padding: 9px 30px;
-	margin: 30px 0;
-	border-radius: 30px;
-	transition: background 0.5s;
-}
-.form button:hover{
-	background: #055700;
-	cursor: pointer;
-}
-.form .message-box{
-	height: 100px;
-	text-align: left;
-	overflow-wrap: break-word;
-}
-
-
-.about-img{
-	width: 300px;
-	height: 300px;
-}
-.dropbtn {
-	color: white;
-}
-
-
+/* #region Form CSS */
+	.form input{
+		display: inline-block;
+		text-align: left;
+		color: black;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.form textarea{
+		display: inline-block;
+		text-align: left;
+		color: black;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.form button{
+		display: inline-block;
+		background: green;
+		color: #fff;
+		padding: 9px 30px;
+		margin: 30px 0;
+		border-radius: 30px;
+		transition: background 0.5s;
+	}
+	.form button:hover{
+		background: #055700;
+		cursor: pointer;
+	}
+	.form .message-box{
+		height: 100px;
+		text-align: left;
+		overflow-wrap: break-word;
+	}
+/* #endregion */
 }
 
 @media only screen and (max-width: 970px){	
@@ -381,307 +351,276 @@ td {
 	display: block;
 }
 
-.navbar{
-	display: flex;
-	align-items: center;
-	padding: 20px;	
-}
-nav{
-	flex: 1;
-	text-align: right;
-}
-
-nav ul{
-	display: inline-block;
-	list-style-type: none;
-}
-nav ul li{
-	display: inline-block;
-	margin: 20px;
-}
-nav ul li a{
-	color: white;
-	
-}
-
-
-/* #region Column */
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-    }
-  
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-/* #endregion */
-
-a{
-	text-decoration: none;
-	color: blue;
-}
-h1 {
-	font-weight: bold;
-	font-size: 20px;
-}
-h2 {
-	font-weight: bold;
-	font-size: 20px;
-}
-h4{
-	font-weight: bold;
-	font-size: 20px;
-}
-h5 {
-	color: white;
-	font-weight: bold;
-	font-size: 30px;
-}
-p{
-	text-align: left;
-	font-size: 15px;
-}
-.container{
-	max-width: 1300px;
-	margin: auto;
-	padding-left: 0px;
-}
-.row{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;	
-}
-/*---------- Button CSS ----------*/
-.btn{
-	display: inline-block;
-	background-image: linear-gradient(to right, purple , aqua);
-	color: black;
-	font-weight: bold;
-	padding: 9px 30px;
-	margin: 15px 0;
-	border-radius: 30px;
-	border: 2px solid black;
-	transition: background 0.5s;
-}
-.btn:hover{
-	background-image: linear-gradient(to right, aqua , purple);
-}
-
-/*---------- End Button CSS ----------*/
 .header row{
 	margin-top: 70px;
 	
 }
-.small-container{
-	background-color: rgb(0, 0, 0, 0.5);
-	max-width: 1080px;
-	margin: auto;
-	padding-left: 25px;
-	padding-right: 25px;
-	isolation: isolate;
-}
 
-.small-container{
-	padding: 15px 20px;
-	text-align: left;
-	font-size: 20px;
-	line-height: 25px;
-	border-radius: 30px;
-}
+/* #region Nav Bar CSS */
+	.navbar{
+		display: flex;
+		align-items: center;
+		padding: 20px;	
+	}
+	nav{
+		flex: 1;
+		text-align: center;
+		font-size: 30px;
+	}
+	nav ul{
+		display: inline-block;
+		list-style-type: none;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 20px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #3CE7D1;
+		text-shadow: 3px 3px black;
+	}
+	nav li{
+		transition: transform 0.5s;
+	}
+	nav li:hover{
+		transform: translateY(-5px);
+	}
+/* #endregion */
 
-.col-4{
-	flex-basis: 30%;
-	padding: 10px;
-	min-width: 200px;
-	margin-bottom: 50px;
-	transition: transform 0.5s;
-	text-align: left;
-}
-.col-4 img{
-	width: 100%;
-	max-height: 125px;
-	
-}
-.col-4 p {
-	font-size: 20px;
-}
-.col-4 li {
-	text-align: left;
-}
-.col-4:hover {
-	transform: translateY(-5px);
-}
+/* #region Containor CSS */
+	.container{
+		max-width: 1300px;
+		margin: auto;
+		padding-left: 0px;
+	}
+	.small-container{
+		background-color: rgb(0, 0, 0, 0.5);
+		max-width: 1080px;
+		margin: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+		isolation: isolate;
+		padding: 15px 20px;
+		text-align: left;
+		font-size: 20px;
+		line-height: 25px;
+		border-radius: 30px;
+		max-height: auto;
+	}
+/* #endregion */
 
-.col-1{
-	padding-right: 10px;
-	min-width: 100px;
-	transition: transform 0.5s;
-	text-align: left;
-}
-.col-1 img{
-	width: 100%;
-	max-height: 125px;
-}
-.col-1 p {
-	font-size: 20px;
-}
-.col-1 li {
-	text-align: left;
-}
-.col-1:hover {
-	transform: translateY(-5px);
-}
+/* #region Text CSS */
+	a{
+		color: #e73c3c;
+		text-decoration: none;
+	}
+	p{
+		font-size: 20px;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 10px;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	h3{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	h4{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	h5 {
+		font-weight: bold;
+		font-size: 50px;
+	}
+	h6 {
+		font-weight: bold;
+		font-size: 60px;
+	}
+/* #endregion */
 
-.title{
-	text-align: center;
-	margin: 0 auto 80px;
-	position: relative;
-	line-height: 30px;
-}
-.title::after{
-	content: '';
-	width: 80px;
-	height: 5px;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.banner {
-	width: 100%;
-	height: 50%;
-	border-radius: 30px;
-}
+/* #region Button CSS */
+	.btn{
+		display: inline-block;
+		background-image: linear-gradient(to right, purple , aqua);
+		color: black;
+		font-weight: bold;
+		padding: 9px 30px;
+		margin: 15px 0;
+		border-radius: 30px;
+		border: 2px solid black;
+	    transition: transform 0.5s;
+    }
+    .btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+/* #endregion */
 
-/*----- Table CSS -----*/
+/* #region Row & Col-1 CSS */ 
+	.row{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;	
+	}
+	.col-1{
+		padding-right: 10px;
+		min-width: 100px;
+		transition: transform 0.5s;
+		text-align: left;
+	}
+	.col-1 img{
+		width: 100%;
+		max-height: 125px;	
+	}
+	.col-1 p {
+		font-size: 20px;
+	}
+	.col-1 li {
+		text-align: left;
+	}
+	.col-1:hover {
+		transform: translateY(-5px);
+	}
+/* #endregion */
 
-table {
-	width: 70%;
-	border-collapse: collapse;
-}
+/* #region Title & Banner CSS */
+	.title{
+		text-align: center;
+		margin: 0 auto 80px;
+		position: relative;
+		line-height: 30px;
+	}
+	.title::after{
+		content: '';
+		width: 80px;
+		height: 5px;
+		border-radius: 5px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.banner {
+		width: 100%;
+		height: 50%;
+		border-radius: 30px;
+	}
+/* #endregion */
 
-th {
-	color: white;
-	font-size: 23px;;
-	text-align: left;
-	padding: 5px;
-	font-weight: bold;
-}
+/* #region Table CSS*/
+	table {
+		width: 65%;
+		border-collapse: collapse;
+	}
+	table a:hover{
+		color: #7e1c1c;
+	}
+	th {
+		font-size: 20px;;
+		text-align: left;
+		padding: 5px;
+		font-weight: bold;
+	}
+	td {
+		text-align: left;
+		padding: 10px 5px;	
+	}
+/* #endregion */
 
-td {
-	color: white;
-	text-align: left;
-	padding: 10px 5px;	
-}
+/* #region Description & Devlog */
+	.desc{
+		max-width: 1000px;
+		max-height: 500px;
+	}
+	.desc-text{
+		width: 700px;
+	}
+	.devlog{
+		width: 100%;
+		height: 1000px;
+		border-radius: 30px;
+	}
+/* #endregion */
 
-td a {
-	color: #ff523b;
-}
+/* #region Dropdown CSS */
+	.dropbtn {
+		background: none;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.dropdown {
+  		position: relative;
+  		display: inline-block;
+	}
+	.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		text-align: left;
+  		background-color: #f1f1f1;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 		z-index: 5;
+	}
+	.dropdown-content a {
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+	}
+	.align-right{
+		justify-content: right;
+	}
 
-/*----- Description Image CSS -------*/
-.desc{
-	max-width: 800px;
-	max-height: 500px;
-}
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: grey;}
 
-.devlog{
-	width: 100%;
-	height: 1000px;
-	border-radius: 30px;
-}
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+/* #endregion */
 
-
-
-.desc-text{
-	width: 700px;
-}
-
-
-/* Dropdown Button */
-.dropbtn {
-	background: none;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	padding: 9px 30px;
-	border-radius: 30px;
-
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  text-align: left;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 5;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.align-right{
-	justify-content: right;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: grey;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-
-
-/*--- Form CSS ---*/
-
-.form input{
-	display: inline-block;
-	text-align: left;
-	color: black;
-	padding: 9px 30px;
-	border-radius: 30px;
-}
-
-.form button{
-	display: inline-block;
-	background: green;
-	color: #fff;
-	padding: 9px 30px;
-	margin: 30px 0;
-	border-radius: 30px;
-	transition: background 0.5s;
-}
-.form button:hover{
-	background: #055700;
-	cursor: pointer;
-}
-.about-img{
-	width: 300px;
-	height: 300px;
-}
-.dropbtn {
-	color: white;
-}
-	
+/* #region Form CSS */
+	.form input{
+		display: inline-block;
+		text-align: left;
+		color: black;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.form textarea{
+		display: inline-block;
+		text-align: left;
+		color: black;
+		padding: 9px 30px;
+		border-radius: 30px;
+	}
+	.form button{
+		display: inline-block;
+		background: green;
+		color: #fff;
+		padding: 9px 30px;
+		margin: 30px 0;
+		border-radius: 30px;
+		transition: background 0.5s;
+	}
+	.form button:hover{
+		background: #055700;
+		cursor: pointer;
+	}
+	.form .message-box{
+		height: 100px;
+		text-align: left;
+		overflow-wrap: break-word;
+	}
+/* #endregion */
 }
