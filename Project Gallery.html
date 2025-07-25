@@ -65,168 +65,254 @@
 <!-- Featured Games Made in C# -->
 
 	<div class="small-container">
-		<!-- All Projects -->
-		<div class="title">
-			<h3 style="text-shadow: 3px 3px black;">Project Gallery</h3>
-			<p style="text-shadow: 2px 2px black;">In Chronological Order</p>
-		</div>
+        <!-- Tab System -->
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab(event, 'tab-3d')">3D Games</button>
+                <button class="tab-button" onclick="showTab(event, 'tab-2d')">2D Games</button>
+                <button class="tab-button" onclick="showTab(event, 'tab-web')">Websites</button>
+            </div>
 
-	<!-- #region Desktop List of Games -->
-		<div class="Desktop">
-		<!-- #region Chub's Revenge - M.A.R.V.I.S - Blank -->
-			<!-- Row of Games -->
-			<div class="row">
-				<!-- Blank -->
-				<div class="col-1-blank">
-					
-				</div>
-				<!-- MARVIS -->
-				<div class="col-1">
-					<a href="Projects/Project; NeonVoid.html"><img src="images/Project NeonVoid/Cover Image.png" alt=""></a>
-					<h1>NeonVoid</h1>
-					<p>Current Project</p>
-				</div>
-				<!-- Chub's Revenge -->
-				<div class="col-1">
-					<a href="Projects/Project; Chub's Revenge.html"><img src="images/Project Chubs Revenge/Cover Image.png" alt=""></a>
-					<h1>Chub's Revenge</h1>
-					<p>Browser</p>
-				</div>
-			</div>
-		<!-- #endregion -->
+            <!-- #region 3D Games Tab Content -->
+            <div id="tab-3d" class="tab-content active">
+                <h2>3D Games</h2>
 
-		<!-- #region Risen from Hell - Kade's Last Stand - BuildABang -->
-			<!-- Row of Games -->
-			<div class="row">
-				<!-- BuildABang -->
-				<div class="col-1">
-					<a href="Projects/Project; BuildABang.html"><img src="images/Project BuildABang/Cover Image.png" alt=""></a>
-					<h1>BuildABang</h1>
-					<p>Browser</p>
-				</div>
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Projects/Project; Kade's Last Stand.html"><img src="images/Project Kades Last Stand/Cover Image.png" alt=""></a>
-					<h1>Kade's Last Stand</h1>
-					<p>Windows & Browser</p>
-				</div>
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Risen from Hell.html"><img src="images/Project Risen from Hell/Cover Image.png" alt=""></a>
-					<h1>Risen from Hell</h1>
-					<p>Windows & Browser</p>
-				</div>
-			</div>
-		<!-- #endregion -->
+                <!-- #region Desktop List of Games -->
+                <div class="Desktop">
+                    <!-- #region Chub's Revenge - BuildABang - Risen From Hell -->
+                    <!-- Row of Games -->
+                    <div class="row">
+                        <!-- Blank -->
+                        <div class="col-1-blank">
+                            
+                        </div>
+                        <!-- Blank -->
+                        <div class="col-1-blank">
+                            
+                        </div>
+                        <!-- Risen From Hell -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Kade's Last Stand.html"><img src="images/Project Kades Last Stand/Cover Image.png" alt=""></a>
+                            <h1>Kade's Last Stand</h1>
+                            <p>Windows</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
 
-		<!-- #region Realm Runner - Neon Racer - Wrap It Up!-->
-			<!-- Row Games -->
-			<div class="row">
-				<!-- Wrap It Up -->
-				<div class="col-1">
-					<a href="Projects/Project; Wrap It Up.html"><img src="images/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it up!</h1>
-					<p>Windows & Browser</p>
-				</div>
-				<!-- Neon Racer -->
-				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
-				</div>
-				<!-- Realm Runner -->
-				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows, Mac, Linux & Browser</p>
-				</div>
-			</div>
-		<!-- #endregion -->
-	</div>
-	<!-- #endregion -->
-		
-	<!-- #region Mobile List of Games -->
-		<div class="Mobile">
-			<!-- Row 3 of Games -->
-			<div class="row">
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Development Hub/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
-				</div>
+                    <!-- #region Chub's Revenge - BuildABang - Risen From Hell -->
+                    <!-- Row of Games -->
+                    <div class="row">
+                        <!-- Chub's Revenge -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Chub's Revenge.html"><img src="images/Project Chubs Revenge/Cover Image.png" alt=""></a>
+                            <h1>Chub's Revenge</h1>
+                            <p>Browser</p>
+                        </div>
+                        <!-- BuildABang -->
+                        <div class="col-1">
+                            <a href="Projects/Project; BuildABang.html"><img src="images/Project BuildABang/Cover Image.png" alt=""></a>
+                            <h1>BuildABang</h1>
+                            <p>Windows, Browser</p>
+                        </div>
+                        <!-- Risen From Hell -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Risen from Hell.html"><img src="images/Project Risen from Hell/Cover Image.png" alt=""></a>
+                            <h1>Risen From Hell</h1>
+                            <p>Windows</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                    
+                    <!-- #region Realm Runner - Chub's Revenge - BuildABang -->
+                    <div class="row">
+                        <!-- Wrap It Up! -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Wrap It Up.html"><img src="images/Project Wrap It Up/Cover Image.png" alt=""></a>
+                            <h1>Wrap It Up!</h1>
+                            <p>Browser</p>
+                        </div>
+                        <!-- Neon Racer -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
+                            <h1>Neon Racer</h1>
+                            <p>VR & Windows</p>
+                        </div>
+                        <!-- Realm Runner -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
+                            <h1>Realm Runner</h1>
+                            <p>Windows, Mac, Linux & Browser</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                </div>
+                <!-- #endregion -->
+                
+                <!-- #region Mobile List of Games -->
+                <div class="Mobile">
+                    <!-- #region MARVIS - NeonVoid - Neon Racer -->
+                    <!-- Row of Games -->
+                    <div class="row">
+                        <!-- MARVIS -->
+                        <div class="col-1">
+                            <a href="Projects/Project; MARVIS.html"><img src="images/Project MARVIS/Cover Img.png" alt=""></a>
+                            <h1>M.A.R.V.I.S</h1>
+                            <p>Web Application</p>
+                        </div>
+                        <!-- NeonVoid -->
+                        <div class="col-1">
+                            <a href="Projects/Project; NeonVoid.html"><img src="images/Project NeonVoid/Cover Image.png" alt=""></a>
+                            <h1>NeonVoid</h1>
+                            <p>Current Project - 3D</p>
+                        </div>
+                        <!-- Neon Racer -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
+                            <h1>Neon Racer</h1>
+                            <p>VR & Windows</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                    
+                    <!-- #region Realm Runner - Chub's Revenge - BuildABang -->
+                    <div class="row">
+                        <!-- Realm Runner -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
+                            <h1>Realm Runner</h1>
+                            <p>Windows, Mac, Linux & Browser</p>
+                        </div>
+                        <!-- Chub's Revenge -->
+                        <div class="col-1">
+                            <a href="Projects/Project; Chub's Revenge.html"><img src="images/Project Chubs Revenge/Cover Image.png" alt=""></a>
+                            <h1>Chub's Revenge</h1>
+                            <p>Browser</p>
+                        </div>
+                        <!-- BuildABang -->
+                        <div class="col-1">
+                            <a href="Projects/Project; BuildABang.html"><img src="images/Project BuildABang/Cover Image.png" alt=""></a>
+                            <h1>BuildABang</h1>
+                            <p>Browser</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion 3D Games Tab Content -->
 
-				<!-- BuildABang -->
-				<div class="col-1">
-					<a href="Projects/Project; Wrap it Up.html"><img src="images/Development Hub/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it up!</h1>
-					<p>Windows & Browser</p>
-				</div>
-			</div>
+            <!-- #region 2D Games Tab Content -->
+            <div id="tab-2d" class="tab-content">
+                <h2>2D Games</h2>
+                
+                <!-- #region Desktop List of Games -->
+                <div class="Desktop">
+                    <h2>No 2D Projects as of yet</h2>
+                    <p style="text-align: center; font-size: 25px;">Have no fear they are coming</p>
+                </div>
+                <!-- #endregion -->
 
-			<div class="row">
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Development Hub/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows, Mac, Linux & <br> Browser </p>
-				</div>
+                <!-- #region Mobile List of Games -->
+                <div class="Mobile">
+                    <h2>No 2D Projects as of yet</h2>
+                    <p style="text-align: center; font-size: 25px;">Have no fear they are coming</p>
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion 2D Games Tab Content -->
 
-				<!-- Risen from Hell -->
-				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Development Hub/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
-				</div>
-			</div>
+            <!-- #region Websites Tab Content -->
+            <div id="tab-web" class="tab-content">
+                <h2>Website Projects</h2>
+                
+                <!-- #region Desktop List of Projects -->
+                <div class="Desktop">
+                    <!-- #region Studio - Portfolio-->
+                    <div class="row">
+                        <div class="col-1-blank">
+                            
+                        </div>
+                        <!-- WI.BI Studio -->
+                        <div class="col-1">
+                            <a target="_blank" href="https://wibi-studio.com"><img src="images/Website Thumbnails/Studio Thumbnail.png" alt=""></a>
+                            <h1>Wi.Bi Studio</h1>
+                            <p>Studio Website</p>
+                        </div>
+                        <!-- My Portfolio -->
+                        <div class="col-1">
+                            <a href="index.html"><img src="images/Website Thumbnails/Portfolio Thumbnail.png" alt=""></a>
+                            <h1>My Portfolio</h1>
+                            <p>Personal Website</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
 
-		</div>
-	<!-- #endregion -->
-	</div>
+                    <!-- #region MysterBox - GeoBlade - VoidTimer-->
+                    <div class="row">
+                        <!-- NeonVoid -->
+                        <div class="col-1">
+                            <a target="_blank" href="https://mysteryboxminigame.github.io"><img src="images/Website Thumbnails/MysteryBox Thumbnail.png" alt=""></a>
+                            <h1>MysteryBox Minigame</h1>
+                            <p>Web Application</p>
+                        </div>
+                        <!-- Neon Racer -->
+                        <div class="col-1">
+                            <a target="_blank" href="https://geoblade.github.io"><img src="images/Website Thumbnails/GeoBlade Thumbnail.png" alt=""></a>
+                            <h1>GeoBlade</h1>
+                            <p>DnD Map Hoster</p>
+                        </div>
+                        <!-- VoidTimer -->
+                        <div class="col-1">
+                            <a target="_blank" href="https://voidtimer.github.io/VoidTimer"><img src="images/Website Thumbnails/VoidTimer Thumbnail.png" alt=""></a>
+                            <h1>VoidTimer</h1>
+                            <p>Countdown Site</p>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                </div>
+                <!-- #endregion -->
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+                <!-- #region Mobile List of Projects -->
+                <div class="Mobile">
+                    <div class="row">
+                        <!-- MARVIS -->
+                        <div class="col-1">
+                            <a href="Projects/Project; MARVIS.html"><img src="images/Project MARVIS/Cover Img.png" alt=""></a>
+                            <h1>M.A.R.V.I.S</h1>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion Websites Tab Content -->
+        </div>
+    </div>
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    <!-- Tab Switching JavaScript -->
+    <script>
+        function showTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove active class from all buttons
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content
+            document.getElementById(tabName).classList.add("active");
+            
+            // Add active class to the clicked button
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
 </body>
 </html>

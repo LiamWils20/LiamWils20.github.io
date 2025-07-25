@@ -558,46 +558,87 @@ body {
     margin: 15px 0;
     text-shadow: 1px 1px black;
 }
-/* #endregion */
 
-/* #region Row/Col-1 CSS */
-.social-row {
+/* #region Tab System CSS */
+.tab-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tab-buttons {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
-.social-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    margin: 30px;
-    min-width: 200px;
-    transition: transform 0.5s;
-    border-radius: 30px;
+
+.tab-button {
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    color: #ffffff;
+    border: 2px solid #3CE7D1;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(60, 231, 209, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.social-box h1 {
-    text-align: left;
-    font-size: 25px;
-    padding-left: 10px;
+
+.tab-button:hover {
+    background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(60, 231, 209, 0.4);
 }
-.social-box p {
-    text-align: left;
-    font-size: 14px;
-    padding-left: 10px;
+
+.tab-button.active {
+    background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+    color: #1a1a1a;
+    box-shadow: 0 8px 25px rgba(60, 231, 209, 0.5);
 }
-.social-box .btn {
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
     text-align: center;
-    position: relative;
-    left: 25%;
+    color: #3CE7D1;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.social-box li {
-    text-align: left;
-}
-.social-box:hover {
-    transform: translateY(-5px);
+
+/* Mobile Tab Styles */
+@media (max-width: 768px) {
+    .tab-buttons {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .tab-button {
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    
+    .tab-content h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 }
 /* #endregion */
 
+/* #endregion */
 
 }
 
@@ -1141,6 +1182,7 @@ body {
     border-radius: 30px;
     border: 3px solid black;
     float: center;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1162,7 +1204,84 @@ body {
     margin: 15px 0;
     text-shadow: 1px 1px black;
 }
+
+/* #region Tab System CSS */
+.tab-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    color: #ffffff;
+    border: 2px solid #3CE7D1;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(60, 231, 209, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-button:hover {
+    background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(60, 231, 209, 0.4);
+}
+
+.tab-button.active {
+    background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+    color: #1a1a1a;
+    box-shadow: 0 8px 25px rgba(60, 231, 209, 0.5);
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    text-align: center;
+    color: #3CE7D1;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Tab Styles */
+@media (max-width: 768px) {
+    .tab-buttons {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .tab-button {
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    
+    .tab-content h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+}
 /* #endregion */
 
 }
-
