@@ -112,7 +112,6 @@ body {
 /* #endregion */
 
 /* #region Column */
-
     .row-column{
         width: 100%;
     }
@@ -133,7 +132,6 @@ body {
 /* #endregion */
 
 /* #region Text CSS */
-
     a {
         text-decoration: none;
         color: #e73c3c;
