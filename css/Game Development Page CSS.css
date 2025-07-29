@@ -427,7 +427,39 @@ body {
         text-shadow: 3px 3px black;
         margin-bottom: 15px;
     }
+    /* #endregion */
 
+/* #region Blog Post Buttons */
+    .blog-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .blog-button {
+        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+        color: #ffffff;
+        border: 2px solid #3CE7D1;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(60, 231, 209, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .blog-button:hover {
+        background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+        color: #1a1a1a;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(60, 231, 209, 0.4);
+    }
+/* #endregion */
 
 }
 
