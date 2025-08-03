@@ -166,15 +166,7 @@ footer p {
     float:center;
 }
 
-.blue-divider{
-    width: 10%; /* Adjust this value to control the divider's width */
-    height: 4px; /* Adjust this value to control the divider's height */
-    background-color: rgb(8, 0, 255);/* Or any color you prefer */
-    border-radius: 30px;
-    margin: auto; /* Add some vertical spacing around the divider */
-    float: left;
-    margin-right: 30px;
-}
+
 
 /* Devlog styles */
 .devlog {

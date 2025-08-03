@@ -16,6 +16,15 @@ body {
 	box-sizing: border-box;
 }
 
+.blue-divider{
+    width: 10%; /* Adjust this value to control the divider's width */
+    height: 4px; /* Adjust this value to control the divider's height */
+    background-color: rgb(8, 0, 255);/* Or any color you prefer */
+    border-radius: 30px;
+    margin-bottom: 20px; /* Add some vertical spacing around the divider */
+    display: block;
+}
+
 .Desktop{
 	display: block;
 }
@@ -482,6 +491,16 @@ body {
 	
 }
 
+.blue-divider{
+    width: 10%; /* Adjust this value to control the divider's width */
+    height: 4px; /* Adjust this value to control the divider's height */
+    background-color: rgb(8, 0, 255);/* Or any color you prefer */
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add some vertical spacing around the divider */
+    display: block;
+}
+
 /* #region Nav Bar CSS */
 	.navbar{
 		display: flex;
@@ -749,4 +768,131 @@ body {
 		overflow-wrap: break-word;
 	}
 /* #endregion */
+
+/* #region Skills Section CSS */
+    .skills-section {
+        margin-bottom: 40px;
+        display: block;
+    }
+    .skills-content{
+        gap: 15px; 
+        margin-bottom: 20px; 
+        display: flex;
+    }
+    .skills-column{
+        padding-right: 10px;
+		min-width: 100px;
+		transition: transform 0.5s;
+		text-align: left;
+        background-color: rgba(60, 231, 209, 0.1);
+        border-radius: 15px;
+        padding: 15px;
+        min-width: 230px;
+    }
+    .skills-column:hover {
+		transform: translateY(-5px);
+	}
+/* #endregion */
+
+/* #region My Journey Section CSS */
+    .my-journey {
+        margin-bottom: 40px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .my-journey-entry{
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .entry-date {
+        color: #3CE7D1;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .line-dot {
+        position: absolute;
+        left: -33px;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        background-color: #3CE7D1;
+        border-radius: 50%;
+    }
+    .line-dot::after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: 10px;
+        width: 4px;
+        height: calc(100% - 20px);
+        background-color: #3CE7D1;
+    }
+    /* #endregion */
+
+/* #region Passion CSS */
+    .passion-section {
+        margin-bottom: 40px;
+    }
+    .passion-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .passion-row {
+        padding: 10px;
+        background-color: rgba(60, 231, 209, 0.1);
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+    .passion-column-left {
+  		flex: 50%;
+		padding: 10px;
+	}
+	.passion-column-right{
+		flex: 50%;
+		padding: 10px;
+        height: 50px
+	}
+    .passion-row:hover {
+        transform: translateY(-5px);
+    }
+    .passion-section h3{
+        color: #3CE7D1;
+        text-shadow: 3px 3px black;
+        margin-bottom: 15px;
+    }
+    /* #endregion */
+
+/* #region Blog Post Buttons */
+    .blog-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .blog-button {
+        background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+        color: #ffffff;
+        border: 2px solid #3CE7D1;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(60, 231, 209, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .blog-button:hover {
+        background: linear-gradient(135deg, #3CE7D1 0%, #2bb8a8 100%);
+        color: #1a1a1a;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(60, 231, 209, 0.4);
+    }
+/* #endregion */
+
 }
