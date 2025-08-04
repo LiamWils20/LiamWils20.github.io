@@ -645,7 +645,7 @@ body {
 }
 
 /* Large-Mobile Screen CSS */
-@media only screen and (min-width: 301px) and (max-width: 1299px) {
+@media only screen and (min-width: 501px) and (max-width: 1299px) {
 /* #region General CSS */
     * {
         margin: 0;
@@ -1296,7 +1296,7 @@ body {
 }
 
 /* Mobile #2 Screen CSS */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 /* #region General CSS */
     * {
         margin: 0;
