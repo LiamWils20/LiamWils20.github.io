@@ -16,14 +16,38 @@ body {
 	box-sizing: border-box;
 }
 
+#portfolio-link{
+    transition: transform 0.5s;
+}
+#portfolio-link:hover{
+    transform: scale(1.2);
+}
+.portfolio-link-na:hover::after {
+    content: "There is no portfolio";
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #6800b700;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: 2px;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
 .blue-divider{
     width: 10%; /* Adjust this value to control the divider's width */
     height: 4px; /* Adjust this value to control the divider's height */
     background-color: rgb(8, 0, 255);/* Or any color you prefer */
     border-radius: 30px;
+    margin-left: -3px;
+    margin-top: 5px;
     margin-bottom: 20px; /* Add some vertical spacing around the divider */
     display: block;
-}
+}  
 
 .Desktop{
 	display: block;
