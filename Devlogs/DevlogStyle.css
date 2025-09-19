@@ -1,0 +1,129 @@
+body{
+    background-color: #505050;
+    color: #3CE7D1;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 971px){	
+    *{
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+    }
+    .Desktop{
+	display: block;
+    }
+    .Mobile{
+	    display: none;
+    }
+
+    .header row{
+	    margin-top: 70px;
+    }
+
+/* #region Nav Bar CSS */
+	.navbar{
+		display: flex;
+		align-items: center;
+		padding: 20px;	
+	}
+	nav{
+		flex: 1;
+		text-align: center;
+		font-size: 30px;
+	}
+	nav ul{
+		display: inline-block;
+		list-style-type: none;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 20px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #3CE7D1;
+		text-shadow: 3px 3px black;
+	}
+	nav li{
+		transition: transform 0.5s;
+	}
+	nav li:hover{
+		transform: translateY(-5px);
+	}
+/* #endregion */
+
+/* #region Container CSS */
+	.container{
+		max-width: 1300px;
+		margin: auto;
+		padding-left: 0px;
+	}
+	.small-container{
+		background-color: rgb(0, 0, 0, 0.5);
+		max-width: 1300px;
+		margin: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+		isolation: isolate;
+		padding: 15px 20px;
+		text-align: left;
+		font-size: 20px;
+		line-height: 25px;
+		border-radius: 30px;
+		max-height: auto;
+	}
+/* #endregion */
+
+/* #region Text CSS */
+	a{
+		color: #e73c3c;
+		text-decoration: none;
+	}
+	p{
+		font-size: 20px;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 10px;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	h3{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	h4{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	h5 {
+		font-weight: bold;
+		font-size: 50px;
+	}
+	h6 {
+		font-weight: bold;
+		font-size: 60px;
+	}
+/* #endregion */
+
+/* #region Title CSS */
+    .title{
+        text-align: center;
+        padding: 20px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 15px;
+    }
+/* #endregion */
+
+
+}

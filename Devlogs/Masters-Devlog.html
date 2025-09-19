@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Broswer tab title -->
+	<title>Liam's Portfolio</title>
+	<!-- Links to other places, e.g. css pages and images -->
+	<link rel="icon" href="../images/Logo.png">
+	
+    <link rel="stylesheet" href="DevlogStyle.css?v=1.0">
+	<link rel="stylesheet" href="../css/SharedCSS.css?v=1.0">
+</head>
+<body>
+	<style>
+		body {
+			background-image: url("../images/Background.png"); /* Replace with the actual path to your image */
+			background-size: cover; /* Optional: Adjust as needed */
+			background-repeat: no-repeat; /* Optional: Prevent tiling */
+			background-attachment: fixed; /* Optional: Fix the background image */
+		}
+	</style>
+
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+		<!-- Navigation bar section -->
+				<nav>
+					<ul>
+						<div class="Desktop">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../Project Gallery.html">Projects</a></li>
+							<li><a href="../About.html">About</a></li>
+						    <li><a href="../Blog.html">Blog</a></li>
+							<li><a href="../Freelance.html">Freelance</a></li>
+						</div>
+					</ul>
+				</nav>
+				
+				<div class="Mobile">
+					<div class="dropdown">
+						<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
+				
+						<div class="dropdown-content">
+							<a href="index.html">Home</a>
+							<a href="Project Gallery.html">Projects</a>
+							<a href="About.html">About</a>
+						    <a href="Blog.html">Blog</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Featured Games Made in C# -->
+
+	<div class="small-container">
+		<div class="Desktop">
+			<div class="title">
+                <h2>Behind my Masters</h2>
+                <p>My Journey through my Master's Degree in Game Development</p>
+            </div>
+            <p>This is my journey of my master's degree</p>
+            
+                
+            
+        </div>
+	</div>
+	
+
+	<!-- Add this inside your <body>, where you want the button -->
+	<button id="download-pdf">Download as PDF</button>
+
+	<!-- Add this before </body> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<script>
+	document.getElementById('download-pdf').addEventListener('click', function () {
+	    // Select the content you want to export
+	    var element = document.querySelector('.small-container');
+	    html2pdf().set({
+	        margin: 1,
+	        filename: 'Masters-Devlog.pdf',
+	        html2canvas: { scale: 2 },
+	        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+	    }).from(element).save();
+	});
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
