@@ -9,6 +9,35 @@ body {
   font-style: normal;
 }
 
+.download-btn-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+.circle-download-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(44, 44, 44, 0.85);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.circle-download-btn:hover {
+    background: #222;
+}
+.circle-download-btn svg {
+    pointer-events: none;
+}
+.small-container {
+    position: relative; /* Ensure absolute positioning works */
+}
+
 @media only screen and (min-width: 971px){	
 *{
 	margin: 0;

@@ -62,8 +62,8 @@
 	<div class="Desktop">
 	<div class="title">
 <!-- Banner Section -->
-		<img class="banner" src="../images/Project NeonVoid/Banner Image.png" alt="NeonVoid">
-			<a class="btn" target="_blank" href="#">Come back in <p id="demo"></p></a>
+		<img class="banner" src="../images/Project Masters Project/Cover Imag.png" alt="NeonVoid">
+			<a class="btn" target="_blank" href="#">Come back in <p id="countdown"></p></a>
 			
 	</div>
 	
@@ -80,56 +80,71 @@
 		</div>
 	</div>-->
 	
-<!-- About the Game Section-->
-	<h3>About NeonVoid</h3> <br>
-	<div class="blue-divider" ></div> <br>
-	<p>NeonVoid is nothing like anything before. It's a fast-paced, racing simulator for on the go gamers. 
-        Download, load in, and fly your very own spacecraft through various terrains, and avoid as many obstacles
-        as humanly possible. Race to gain the highest score, beat your own or compete with friends,
-        and others from across the globe. 
+<!-- Snapper Section -->
+
+	<p></p>
+	<br> <br>
+
+    <h3>The Project</h3>
+	<div class="blue-divider" ></div>
+	<p>In a world controlled by time and fear one half-blood lived to roam free and happy until tragedy struck. 
+        Flee your home, family, friends and life as you know it. Learn the powers of time-manipulation, defeat foes
+        in every turn, and find your way home once the coast is clear once more. 
     </p>
 	<br> <br>
 
-	<h3>Project Backstory</h3> <br>
-	<div class="blue-divider"></div> <br>
-	<p>NeonVoid is a project to be developed as a way to learn and gain experinece developing mobile games, for both Android and iPhone. 
-        From this project I aim to learn ways to set-up mobile projects, best movement types for mobile, how to create and use touch sensors as well as
-        handle held haptics for player movement within the game. Anything else I learn is a bonus.
-    </p>
+    <h3>Features</h3>
+	<div class="blue-divider" ></div>
+    <li><strong>Time-Manipulation:</strong> Control time the only way you know how. </li>
+
     <br>
-    <p>If you wish to follow along the development you are more than welcome to <a href="../Devlogs/NeonVoid-Devlogs.html">here</a>.</p>
-	<br> <br>
-
-	<h3>Controls</h3> <br>
-	<div class="blue-divider"></div> <br>
+    <h3>Controls</h3>
+	<div class="blue-divider" ></div>
 	<div class="control">
 		<table>
 			<tr>
-		  		<td>Swipe Motion</td>
-		  		<td>Movement</td>
+		  		<td></td>
+		  		<td></td>
 			</tr>
 			<tr>
-		  		<td>Double Swipe</td>
-		  		<td>Decorative Movements</td>
+		  		<td></td>
+		  		<td></td>
+			</tr>
+			<tr>
+		  		<td></td>
+		  		<td></td>
 			</tr>
 		</table>
 	</div>
-    <br> <br>
-
-	<h3>Known Bugs</h3> <br>
-	<div class="blue-divider"></div> <br>
-	<p>No bugs to list as of yet.</p>
 	<br> <br>
 
-	<h3>To Come</h3> <br>
-	<div class="blue-divider"></div> <br>
+    <h3>Bugs</h3>
+	<div class="blue-divider" ></div>
+	<li>No Bugs Reported Yet</li>
 	<br> <br>
 
-	<h3>Devlog</h3> <br>
-	<div class="blue-divider"></div> <br>
-	<li><a href="../Devlogs/NeonVoid-Devlogs.html">Written Logs</a></li>
-	<li><a href="https://www.youtube.com/@wibistudio" target="_blank">Video Logs</a></li>
+    <h3>To Come</h3>
+	<div class="blue-divider" ></div>
+	<li></li>
+	<br> <br>
 
+<!-- #endregion -->
+
+
+<!-- #region Screenshot Section -->
+ 		
+		<h3>Gallery</h3>
+		<div class="blue-divider" ></div>
+	        <div class="gallery">
+		        <div class="gallery-col-blank">
+			        
+		        </div>
+	        </div>
+	            <br> <br>
+        <!-- #endregion -->
+
+	</div>
+<!-- #endregion -->
 </div>
 
 
@@ -200,7 +215,34 @@ Super Mario 64.
 	
 
 	
+<script>
+    // Set the release date here
+    const releaseDate = new Date("2026-09-30T16:00:00").getTime();
 
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = releaseDate - now;
+
+      if (distance <= 0) {
+        countdownEl.textContent = "Game Released!";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Run immediately so there's no delay
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+  </script>
 	
 	
 	
