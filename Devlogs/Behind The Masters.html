@@ -27,30 +27,28 @@
 
 
 	<div class="header">
-		<div class="container">
-			<div class="navbar">
+		<div class="navbar">
 		<!-- Navigation bar section -->
-				<nav>
-					<ul>
-						<div class="Desktop">
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="../Project Gallery.html">Projects</a></li>
-							<li><a href="../About.html">About</a></li>
-						    <li><a href="../Blog.html">Blog</a></li>
-						</div>
-					</ul>
-				</nav>
+			<nav>
+				<ul>
+					<div class="Desktop">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../Project Gallery.html">Projects</a></li>
+						<li><a href="../About.html">About</a></li>
+						<li><a href="../Blog.html">Blog</a></li>
+					</div>
+				</ul>
+			</nav>
 				
-				<div class="Mobile">
-					<div class="dropdown">
-						<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
+			<div class="Mobile">
+				<div class="dropdown">
+					<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
 				
-						<div class="dropdown-content">
-							<a href="index.html">Home</a>
-							<a href="Project Gallery.html">Projects</a>
-							<a href="About.html">About</a>
-						    <a href="Blog.html">Blog</a>
-						</div>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a>
+						<a href="Project Gallery.html">Projects</a>
+						<a href="About.html">About</a>
+						<a href="Blog.html">Blog</a>
 					</div>
 				</div>
 			</div>
@@ -86,25 +84,38 @@
 		    <!-- Blog Posts Container -->
 		    <div class="blog-posts-container">
 
-                <!-- #region .. - Wednesday 24th September 2025 -->
+                <!-- #region .. - Friday 3rd October 2025 -->
                     <article class="blog-post">
 						<div class="post-header">
 							<div class="post-date">
-								<span class="day">24</span>
-								<span class="month">SEP</span>
+								<span class="day">03</span>
+								<span class="month">OCT</span>
 								<span class="year">2025</span>
 							</div>
 							<div class="post-title">
-								<h3>...</h3>
+								<h3>Three Weeks Gone</h3>
 								<span class="post-tags">
-									<span class="tag featured-tag">..</span>
-									<span class="tag">..</span>
+									<span class="tag featured-tag">Three Week Mark</span>
+									<span class="tag">Time Sure Does Fly</span>
 								</span>
 							</div>
 						</div>
 					<div class="post-content">
-                        <h2>...</h2>
-                        <p>..</p>
+                        <h2>What Happened End of Week 2?</h2>
+                        <h1>Hello</h1>
+                        <p>So, last week ended with the second class of my studies, the webinar covered an assignment overview and project planning.
+                            My project is essentially planned and ready for development. Which I technically started last week. 
+                        </p>
+                        <h2>What Happened on Week 3?</h2>
+                        <p>I have realised recently that time does fly, one moment you're just starting the course, and in the next instant you're 
+                            already three weeks in. This week was a bit uncertain. The webinar on Wednesday went over theoretical perspectives and methodologies.
+                            As soon as the recording goes live I will re-watch it and begin exploring potential research methodologies for my paper. I need to figure this out
+                            before end of week 4, as it may require me to add some data collection features within my project. 
+                        </p>
+                        <p>Also this week I have begun writing my Abstract as well as a gantt chart to help stay focused and on track for this module. 
+                            I should have my Abstract done and written by the end of Monday next week, the gantt chart should be done by end of today. 
+                            Then on Monday, or when the abstract is done, I will be able to move onto the next task which to my knowledge is the presentation. 
+                        </p>
 					</div>
                 </article>
                 <!-- #endregion -->
@@ -168,6 +179,7 @@
                 </article>
                 <!-- #endregion -->
                 
+
                 <!-- #region First Post - Wednesday 17th September 2025 -->
                     <article id="first-post" class="blog-post featured">
 						<div class="post-header">
@@ -236,57 +248,122 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 	<script>
-	document.getElementById('download-pdf').onclick = function () {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
+    document.getElementById('download-pdf').onclick = function () {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
 
-    let posts = document.querySelectorAll('.blog-post');
-    let y = 20;
-    const margin = 15;
-    const boxWidth = doc.internal.pageSize.getWidth() - margin * 2;
-    const boxPadding = 5;
+        let posts = document.querySelectorAll('.blog-post');
+        let y = 20;
+        const margin = 15;
+        const boxWidth = doc.internal.pageSize.getWidth() - margin * 2;
+        const boxPadding = 5;
 
-    posts.forEach(post => {
-        // Get date, title, and content
-        const date = post.querySelector('.post-date').innerText.replace(/\n/g, ' ');
-        const title = post.querySelector('.post-title h3').innerText;
-        const content = post.querySelector('.post-content').innerText;
+        posts.forEach(post => {
+            // Get date and title
+            const date = post.querySelector('.post-date').innerText.replace(/\n/g, ' ');
+            const title = post.querySelector('.post-title h3').innerText;
+            const contentNode = post.querySelector('.post-content');
 
-        // Estimate box height (adjust as needed)
-        let contentLines = doc.splitTextToSize(content, boxWidth - boxPadding * 2);
-        let boxHeight = 10 + 8 + contentLines.length * 7 + boxPadding * 2;
 
-        // Add new page if needed
-        if (y + boxHeight > doc.internal.pageSize.getHeight() - margin) {
-            doc.addPage();
-            y = margin;
-        }
+            // Prepare content lines with formatting and wrapping
+            let contentLines = [];
+            contentNode.childNodes.forEach(node => {
+                if (node.nodeType === 1 && node.tagName === 'H2') {
+                    // Bold h2
+                    contentLines.push({ lines: [node.innerText], bold: true });
+                } else if (node.nodeType === 1 && node.tagName === 'P') {
+                    // Wrap paragraph text
+                    let wrapped = doc.splitTextToSize(node.innerText, boxWidth - boxPadding * 2);
+                    contentLines.push({ lines: wrapped, bold: false });
+                } else if (node.nodeType === 1 && node.tagName === 'LI') {
+                    let wrapped = doc.splitTextToSize('\u2022 ' + node.innerText, boxWidth - boxPadding * 2);
+                    contentLines.push({ lines: wrapped, bold: false });
+                }
+            });
 
-        // Draw border box
-        doc.setDrawColor(60, 231, 209); // #3CE7D1
-        doc.setLineWidth(0.7);
-        doc.rect(margin, y, boxWidth, boxHeight);
+            // Calculate box height including extra line spaces above h2
+            let totalContentLines = 0;
+            contentLines.forEach((line, idx) => {
+                if (line.bold && idx !== 0) {
+                    totalContentLines += 1; // extra line space above h2
+                }
+                totalContentLines += line.lines.length;
+            });
+            let boxHeight = 10 + 8 + totalContentLines * 7 + boxPadding * 2;
+            if (boxHeight < 40) boxHeight = 40;
 
-        // Date
-        doc.setFontSize(10);
-        doc.setTextColor(60, 231, 209);
-        doc.text(date, margin + boxPadding, y + boxPadding + 7);
+            // Add new page if needed
+            if (y + boxHeight > doc.internal.pageSize.getHeight() - margin) {
+                doc.addPage();
+                y = margin;
+            }
 
-        // Title
-        doc.setFontSize(14);
-        doc.setTextColor(0, 0, 0);
-        doc.text(title, margin + boxPadding, y + boxPadding + 18);
 
-        // Content
-        doc.setFontSize(11);
-        doc.setTextColor(50, 50, 50);
-        doc.text(contentLines, margin + boxPadding, y + boxPadding + 28);
+            // We'll render the box and content in chunks if it overflows the page
+            let pageHeight = doc.internal.pageSize.getHeight();
+            let startY = y;
+            let contentY = y + boxPadding + 28;
+            let boxStartY = y;
+            let boxEndY = y + boxHeight;
 
-        y += boxHeight + 10; // Space between boxes
-    });
+            // Draw initial border box
+            doc.setDrawColor(60, 231, 209); // #3CE7D1
+            doc.setLineWidth(0.7);
+            doc.rect(margin, boxStartY, boxWidth, Math.min(boxHeight, pageHeight - margin - boxStartY));
 
-    doc.save('Behind-The-Masters.pdf');
-};
+            // Date
+            doc.setFontSize(10);
+            doc.setTextColor(60, 231, 209);
+            doc.setFont(undefined, 'normal');
+            doc.text(date, margin + boxPadding, boxStartY + boxPadding + 7);
+
+            // Title
+            doc.setFontSize(14);
+            doc.setTextColor(0, 0, 0);
+            doc.setFont(undefined, 'bold');
+            doc.text(title, margin + boxPadding, boxStartY + boxPadding + 18);
+
+            // Content
+            let firstContentY = boxStartY + boxPadding + 28;
+            contentY = firstContentY;
+            contentLines.forEach((line, idx) => {
+                // Add a line space above h2 (except if it's the first content line)
+                if (line.bold && idx !== 0) {
+                    contentY += 7;
+                }
+                doc.setFont(undefined, line.bold ? 'bold' : 'normal');
+                doc.setFontSize(line.bold ? 12 : 11);
+                doc.setTextColor(50, 50, 50);
+                line.lines.forEach(l => {
+                    // If next line would overflow the page, add new page and redraw border box
+                    if (contentY > pageHeight - margin - 7) {
+                        doc.addPage();
+                        pageHeight = doc.internal.pageSize.getHeight();
+                        boxStartY = margin;
+                        // Calculate remaining lines to render
+                        let remainingLines = 0;
+                        contentLines.forEach((cl, i) => {
+                            if (i > idx || (i === idx && cl.lines.indexOf(l) < cl.lines.length - 1)) {
+                                remainingLines += cl.lines.length;
+                            }
+                        });
+                        // Estimate new box height for remaining content
+                        let newBoxHeight = Math.max(40, 10 + 8 + remainingLines * 7 + boxPadding * 2);
+                        doc.setDrawColor(60, 231, 209);
+                        doc.setLineWidth(0.7);
+                        doc.rect(margin, boxStartY, boxWidth, Math.min(newBoxHeight, pageHeight - margin - boxStartY));
+                        contentY = boxStartY + boxPadding + 7; // Start a bit lower for continued content
+                    }
+                    doc.text(l, margin + boxPadding, contentY);
+                    contentY += 7;
+                });
+            });
+
+            y = contentY + 10; // Space between boxes
+        });
+
+        doc.save('Behind-The-Masters.pdf');
+    };
 </script>
 	
 	
