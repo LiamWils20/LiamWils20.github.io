@@ -134,7 +134,7 @@ const games = [
       genre: ["Action", "Adventure", "Platformer", "Indie"],
       released: "26/07/2023",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Realm Runner.html",
+      link: "Project Pages/Realm Runner/Realm Runner-Main.html",
       cover: "images/Projects/Game/Realm Runner/Cover Image.png",
     },
     // TBD

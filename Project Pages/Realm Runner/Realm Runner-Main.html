@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liam | Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Logo.png">
+  
+  <link rel="stylesheet" href="../../css/Style.css">
+  <link rel="stylesheet" href="../../css/GamePage.css">
+</head>
+
+
+<body>
+  <div class="frame">
+    <header>
+      <div class="logo-mark">
+        <a href="../../index.html"><div class="logo-icon"><img src="../../images/Logo.png" alt="Logo"></div></a>
+        <div>
+          <div class="logo-text-main">Liam</div>
+          <div class="logo-text-sub">Game Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="">About</a>
+        <a href="">Contributions</a>
+        <a href="">Logs</a>
+        <a href="">Download</a>
+      </nav>
+    </header>
+
+    <div class="banner">
+        <img src="../../images/Projects/Game/Realm Runner/Banner Image.png" alt="">
+        <a class="play-btn" href="#Download">Play Now</a>
+    </div>
+    <!-- #region Gallery -->
+    <div class="row-scrn">
+		<div class="scrn-col">
+			<img 
+                src="../../images/Projects/Game/Realm Runner/Gallery/Scrn1.png" 
+                alt=""
+                class="modal-img"
+            >
+		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="../../images/Projects/Game/Realm Runner/Gallery/Scrn2.png" 
+                alt=""
+                class="modal-img"
+            >
+		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="../../images/Projects/Game/Realm Runner/Gallery/Scrn3.png" 
+                alt=""
+                class="modal-img"
+            >
+		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="../../images/Projects/Game/Realm Runner/Gallery/Scrn4.png" 
+                alt=""
+                class="modal-img"
+            >
+		</div>  
+	</div>
+    <!-- #endregion Gallery -->
+
+	<project>
+        
+        <!-- About -->
+		<section class="project-section">
+			<h2>About</h2>
+            <p>Realm Runner is a platforming-action-puzzle adventure where you will explore
+                different dimensions to retrieve lost fragments, the source of life across 
+                realms. Hurry! You must save this reality from the threat lurking within the
+                dark.
+            </p>
+		</section>
+
+        <!-- Project Backstory -->
+		<section class="project-section">
+			<h2>Project Backstory</h2>
+            <p>Realm Runner is a collaborative project within Unity. For more details about persons 
+                involved and their contributions, check out <a href="#team">the team</a> section below, or the
+                 <a href="#myContributions">my contributions</a> section. </p>
+            <br>
+            <p>Realm Runner was created as a university project within a 13 week timeframe. It is no longer
+                in-development, however we may one day return to it if the stars align.
+            </p>
+		</section>
+
+        <!-- Controls -->
+        <section class="project-section">
+			<h2>Keyboard Controls</h2>
+            <ul class="project-list">
+                <li>WASD - Move</li>
+                <li>Space - Jump</li>
+                <li>Hold RMB - Aim</li>
+                <li>LMB - Shoot (Only While Aiming)</li>
+                <li>Escape - Pause</li>
+            </ul>
+		</section>
+
+        <!-- My Contributions -->
+        <section class="project-section">
+			<h2>My Contributions</h2>
+            <ul class="project-list">
+                <li>UI Main Menu Programmer & Designer</li>
+                <li>Bow and Arrow Attach System Programmer</li>
+                <li>Sound & World Objects Programmer</li>
+                <li>And Animation Implementation and Programming</li>
+            </ul>
+		</section>
+
+        <!-- TEAM -->
+        <section class="project-section" id="team">
+            <h2>The Team</h2>
+            <p>
+               Realm Runner was developed by a handful of students.
+            </p> <br>
+
+            <ul class="project-list">
+                <li><strong><a href="https://mikehayes.itch.io">Michael Hayes</a></strong> - Level Designer, World Programmer, & UI Designer</li>
+                <li><strong><a href="https://robinpound.itch.io">Robin Pound</a></strong> - Enemy AI, Level Designer, Tool Programmer, & Water/Lava Shader</li>
+                <li><strong><a href="../../index.html">Liam Wilson</a></strong> - UI Programmer, Attach System Programmer, & Animations</li>
+                <li><strong><a href="https://j-misterio1.itch.io">Jesus Miguel</a></strong> - Player Programmer, Camera Programmer, Animations, Aim Rigging, Shaders</li>
+                <li><strong><a href="https://laniproductions.wixsite.com/my-site">Lani Morning</a></strong> - Sound Engineer</li>
+            </ul>
+        </section>
+	</project>
+
+    <!-- Image Modal -->
+    <div id="imgModal" class="img-modal">
+        <span class="img-close">&times;</span>
+        <img class="img-modal-content" id="modalImg">
+    </div>
+	
+
+    <footer>
+      <div>
+        © <span id="year"></span> Liam · Game Developer
+      </div>
+      <div class="footer-links" id="contact">
+        <a href="mailto:wliam4410@gmail.com">Email</a>
+        <a href="https://liamwils20.itch.io">itch.io</a>
+        <a href=""></a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".img-close");
+
+    function openModal(img) {
+      modal.classList.remove("closing");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      modal.classList.add("closing");
+
+      setTimeout(() => {
+        modal.style.display = "none";
+        modal.classList.remove("closing");
+        modalImg.src = "";
+      }, 200); // must match zoomOut duration
+    }
+
+    document.querySelectorAll(".modal-img").forEach(img => {
+      img.onclick = () => openModal(img);
+    });
+
+    closeBtn.onclick = closeModal;
+
+    modal.onclick = (e) => {
+      if (e.target === modal) closeModal();
+    };
+  });
+
+  </script>
+
+
+</body>
+</html>

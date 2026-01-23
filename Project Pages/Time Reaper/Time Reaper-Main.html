@@ -32,6 +32,7 @@
 
     <div class="banner">
         <img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="">
+        <a class="play-btn" target="_blank" href="#">Come back in <p id="countdown"></p></a>
     </div>
 
     <div class="row-scrn">
@@ -46,7 +47,7 @@
 
 	<project>
         
-        <!-- About -->
+        <!-- ABOUT -->
 		<section class="project-section">
 			<h2>About</h2>
             <p>Time Reaper is a story-driven realm, where you the player must scale and traverse the lands of La-jor, 
@@ -56,7 +57,7 @@
                 want to <a href="../../Journey/SAE-2026-MastersCourse.html"><span class="gold">Learn More</span></a>. </p>
 		</section>
 
-        <!-- My Contributions -->
+        <!-- CONTRIBUTION -->
         <section class="project-section">
 			<h2>My Contributions</h2>
             <ul class="project-list">
@@ -79,6 +80,46 @@
 
             <ul class="project-list">
                 <li><strong>Liam</strong> — Game Design, Programming, and Asset Collection</li>
+            </ul>
+        </section>
+
+		<!-- GALLERY -->
+        <section class="project-section">
+            <h2>Gallery</h2>
+            <p>
+
+            <ul class="project-gallery">
+                <div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				
+				<div class="project-gallery-col">
+			    	<img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col-blank">
+			    	<img src="" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col-blank">
+			    	<img src="" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col-blank">
+			    	<img src="" alt="" class="modal-img">
+		    	</div>
+				<div class="project-gallery-col-blank">
+			    	<img src="" alt="" class="modal-img">
+		    	</div>
             </ul>
         </section>
 	</project>
@@ -104,6 +145,33 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Set the release date here
+    const releaseDate = new Date("2026-09-30T16:00:00").getTime();
+
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = releaseDate - now;
+
+      if (distance <= 0) {
+        countdownEl.textContent = "Game Released!";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Run immediately so there's no delay
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
 
     document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("imgModal");
