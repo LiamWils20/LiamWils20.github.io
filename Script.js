@@ -7,7 +7,7 @@ const games = [
       genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
       released: "TBD",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Time Reaper/Time Reaper-main.html",
+      link: "Project Pages/Time Reaper/Time Reaper-Main.html",
       cover: "images/Projects/Game/Time Reaper/Cover Img.png",
     },
     // Dragon Slayer
