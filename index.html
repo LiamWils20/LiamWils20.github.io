@@ -1,304 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:title" content="Home - Liam's Portfolio">
-    <meta property="og:description" content="Game Developer | Programmer | Unity & Unreal Enthusiast">
-    <meta property="og:image" content="images/Logo.png">
-    <meta property="og:url" content="https://liamwils20.github.io">
-	<!-- Broswer tab title -->
-	<title>Liam's Portfolio</title>
-	<!-- Links to other places, e.g. css pages and images -->
-	<link rel="icon" href="images/Logo.png">
-	
-	<link rel="stylesheet" href="Style.css">
-	<link rel="stylesheet" href="css/SharedCSS.css">
+  <meta charset="UTF-8" />
+  <title>Liam | Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Logo.png">
+  
+  <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-<style>
-	body {
-		background-image: url("images/Background.png"); /* Replace with the actual path to your image */
-		background-size: cover; /* Optional: Adjust as needed */
-		background-repeat: no-repeat; /* Optional: Prevent tiling */
-		background-attachment: fixed; /* Optional: Fix the background image */
-	}
-</style>
+  <div class="frame">
+    <header>
+      <div class="logo-mark">
+        <a href="index.html"><div class="logo-icon"><img src="images/Logo.png" alt="Logo"></div></a>
+        <div>
+          <div class="logo-text-main">Liam</div>
+          <div class="logo-text-sub">Game Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="">About</a>
+        <a href="">Skills</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <section>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          Available for collaborations
+        </div>
 
-	<div class="header">
-        <!-- #region Navbar Collection-->
-			<div class="navbar">
+        <h1 class="hero-title">
+          Crafting <span class="gold">worlds, systems,</span><br>
+          and unforgettable game moments.
+        </h1>
 
-		    <!-- #region Navigation bar section -->
-				<nav>
-					<ul>
-						<div class="Desktop">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="Project Gallery.html">Projects</a></li>
-							<li><a href="About.html">About</a></li>
-						    <li><a href="Blog.html">Blog</a></li>
-						</div>
-					</ul>
-				</nav>
-		    <!-- #endregion -->
+        <p class="hero-subtitle">
+          I’m a game developer focused on <strong>systems design</strong>, <strong>procedural worlds</strong>, and
+          <strong>magical player experiences</strong>. I blend technical depth with cinematic polish to make every interaction feel alive.
+        </p>
 
-		<!-- #region Large Mobile Navigation bar section -->
-				<div class="Large-Mobile">
-					<div class="dropdown">
-						<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
-				
-						<div class="dropdown-content">
-							<a href="index.html">Home</a>
-							<a href="Project Gallery.html">Projects</a>
-							<a href="About.html">About</a>
-						    <a href="Blog.html">Blog</a>
-						</div>
-					</div>
-				</div>
-		<!-- #endregion -->
-		
-        <!-- #region Small Mobile Navigation bar section -->
-				<div class="Small-Mobile">
-					<div class="dropdown">
-						<button class="dropbtn"><img src="images/Menu.png" width="50px" height="50px"></button>
-				
-						<div class="dropdown-content">
-							<a href="index.html">Home</a>
-							<a href="Project Gallery.html">Projects</a>
-							<a href="About.html">About</a>
-						    <a href="Blog.html">Blog</a>
-						</div>
-					</div>
-				</div>
-		<!-- #endregion -->
-    
-            </div>
-        <!-- #endregion Navbar Collection-->
-	</div>
-<!-- #endregion -->
+        <div class="hero-actions">
+          <a href="Projects.html" class="btn-primary">
+            View all projects
+            <span>↗</span>
+          </a>
+        </div>
 
-<!-- #region Hero . Tagline -->
+        <div class="meta-row">
+          <div>
+            <div class="meta-label">Specialties</div>
+            <div class="meta-value">Gameplay systems · Procedural generation</div>
+          </div>
+          <div>
+            <div class="meta-label">Engines</div>
+            <div class="meta-value">Unity · Godot · Unreal</div>
+          </div>
+        </div>
+	  </section>
 
-	<!-- #region Desktop Hero . Tagline-->
-     <div class="Desktop">
-	    <section class="hero">
-		    <div class="row-column">
-			    <div class="column">
-			        <img src="images/Logo.png" alt="Logo">
-			    </div>
-			    <div class="column">
-			        <h2>Liam Wilson</h2>
-			        <p>Game Developer | Programmer | Unity & Unreal Enthusiast</p>
-			        <p>Contact me at: wliam4410@gmail.com</p>
-			    </div>
-		    </div>
-	    </section>
-    </div>
-	<!-- #endregion -->
+      <aside class="right-panel" id="work">
+        <div class="tagline">Current Build</div>
+        <div class="game-title">
+          <span>“Time Reaper”</span> · Story-driven Action RPG
+        </div>
+        <div class="game-meta">
+          Venture through Korzelia, on a quest for revenge. 
+        </div>
 
-    <!-- #region Large-Mobile Hero . Tagline-->
-     <div class="Large-Mobile">
-	    <section class="hero">
-		    <div class="row-column">
-			    <div class="column">
-			        <img src="images/Logo.png" alt="Logo">
-			    </div>
-			    <div class="column">
-			        <h2>Liam Wilson</h2>
-			        <p>Game Developer | Programmer | Unity & Unreal Enthusiast</p>
-			        <p>Contact me at: wliam4410@gmail.com</p>
-			    </div>
-		    </div>
-	    </section>
-    </div>
-	<!-- #endregion -->
+        <div class="game-preview">
+          <img src="images/Projects/Game/Time Reaper/Cover Img.png">
+        </div>
 
-    <!-- #region Small-Mobile Hero . Tagline-->
-    <div class="Small-Mobile">
-	    <section class="hero">
-		    <div class="row-column">
-			    <img src="images/Logo.png" alt="Logo">
-                <br>
-			    <h2>Liam Wilson</h2>
-			    <p>Game Developer | Programmer | Unity & Unreal Enthusiast</p>
-			    <p>Contact me at: wliam4410@gmail.com</p>
-		    </div>
-	    </section>
-    </div>
-	<!-- #endregion -->
+        <div class="stat-row">
+          <div class="stat-block">
+            <div class="stat-label">Role</div>
+            <div class="stat-value">Solo Dev · Design & Code</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-label">Highlights</div>
+            <div class="stat-value">Story-Driven · In-Depth Combat · Intelligent AI </div>
+          </div>
+        </div>
+      </aside>
+    </main>
 
-<!-- #endregion -->
+	<project>
+		<section id="projects">
+			<h1 class="project-title">
+          		<span class="gold">Featured Projects</span>
+        	</h1>
 
-<!-- Featured Games Made in C# -->
-
-	<div class="small-container">
-		<!-- All Projects -->
-		<div class="title">
-			<h3>My Beloved Projects</h3>
-			<p>A collection of my prized <br> possessions</p>
-		</div>
-
-	<!-- #region Desktop List of Games -->
-		<div class="Desktop">
-			<!-- Row 3 of Games -->
-			<div class="row">
-				<!-- BuildABang -->
+			<div class="project-row">
 				<div class="col-1">
-					<a href="Projects/Project; Wrap it Up.html"><img src="images/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it up!</h1>
-					<p>Windows & Browser</p>
+					<a href="#"><img src="images/Projects/Game/Dragon Slayer/Cover Img.png" alt=""></a>
+					<h1 class="col-title"><span class="gold">Dragon Slayer</span></h1>
+					<p>Windows, Linux & MacOS</p>
+					<p>A world fuelled by dragons, ruled by fear, one lone knight stands against it all. </p> 
+					<a href="Project Pages/Time Reaper/Time Reaper-Main.html" class="btn-col">
+            			Learn More
+            			<span>↗</span>
+          			</a>
 				</div>
-				<!-- Kade's Last Stand -->
+
 				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows, Mac, Linux & Browser</p>
+					<a href="#"><img src="images/Projects/Game/Realm Runner/Cover Image.png" alt=""></a>
+					<h1 class="col-title"><span class="gold">Realm Runner</span></h1>
+					<p>Windows, Linux & MacOS</p>
+          			<p>A combat filled adventure to save the realms of man. </p>
+					<a href="" class="btn-col">
+            			Learn More
+            			<span>↗</span>
+          			</a>
 				</div>
-				<!-- Risen from Hell -->
+
 				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
+					<a href="#"><img src="images/Projects/Game/Neon Racer/Cover Img.gif" alt=""></a>
+					<h1 class="col-title"><span class="gold">Neon Racer VR</span></h1>
+					<p>Windows & VR</p>
+					<p>Speed is king in this face-paced neon race of destined bikers</p>
+					<a href="" class="btn-col">
+            			Learn More
+            			<span>↗</span>
+          			</a>
 				</div>
 			</div>
-		</div>
-	<!-- #endregion -->
-		
-	<!-- #region Large-Mobile List of Games -->
-		<div class="Large-Mobile">
-			<!-- Row 3 of Games -->
-			<div class="row">
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Projects/Project; Kade's Last Stand.html"><img src="images/Project Kades Last Stand/Cover Image.png" alt=""></a>
-					<h1>Kade's Last Stand</h1>
-					<p>Windows & Browser</p>
-				</div>
-
-				<!-- Neon Racer -->
-				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<!-- Wrap It Up! -->
-				<div class="col-1">
-					<a href="Projects/Project; Wrap it Up.html"><img src="images/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it up!</h1>
-					<p>Windows & Browser</p>
-				</div>
-
-				<!-- Realm Runner -->
-				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows, Mac, Linux & <br> Browser </p>
-				</div>
-			</div>
-
-		</div>
-	<!-- #endregion -->
-
-    <!-- #region Small-Mobile List of Games -->
-		<div class="Small-Mobile">
-			<!-- Row 3 of Games -->
-			<div class="row">
-				<!-- Kade's Last Stand -->
-				<div class="col-1">
-					<a href="Projects/Project; Kade's Last Stand.html"><img src="images/Project Kades Last Stand/Cover Image.png" alt=""></a>
-					<h1>Kade's Last Stand</h1>
-					<p>Windows & Browser</p>
-				</div>
-
-				<!-- Neon Racer -->
-				<div class="col-1">
-					<a href="Projects/Project; Neon Racer.html"><img src="images/Project Neon Racer/Cover Img.gif" alt=""></a>
-					<h1>Neon Racer</h1>
-					<p>VR & Windows</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<!-- Wrap It Up! -->
-				<div class="col-1">
-					<a href="Projects/Project; Wrap it Up.html"><img src="images/Project Wrap It Up/Cover Image.png" alt=""></a>
-					<h1>Wrap it up!</h1>
-					<p>Windows & Browser</p>
-				</div>
-
-				<!-- Realm Runner -->
-				<div class="col-1">
-					<a href="Projects/Project; Realm Runner.html"><img src="images/Project Realm Runner/Cover Image.png" alt=""></a>
-					<h1>Realm Runner</h1>
-					<p>Windows, Mac, Linux & <br> Browser </p>
-				</div>
-			</div>
-
-		</div>
-	<!-- #endregion -->
-
-	<!-- #region About Me -->
-	<section class="brief-about">
-		<h3>About Me</h3>
-		<p>I'm a passionate game developer specialising in Unity Development,
-			as well as UI and AI programming. With deep love for interactive storytelling and immersive
-			experiences, I strive to create games that captivate players and push boundaries.</p>
-			<a class="tab-button" href="About.html">Read More!</a>
-	</section>
-	<!-- #endregion -->	
-	
-	
-	<p id="bottom"></p>
-	</div>
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		</section>
+	</project>
 	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    <footer>
+      <div>
+        © <span id="year"></span> Liam · Game Developer
+      </div>
+      <div class="footer-links" id="contact">
+        <a href="mailto:wliam4410@gmail.com">Email</a>
+        <a href="https://liamwils20.itch.io">itch.io</a>
+        <a href=""></a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

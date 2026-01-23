@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liam | Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Logo.png">
+  
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <div class="logo-mark">
+        <a href="index.html"><div class="logo-icon"><img src="images/Logo.png" alt="Logo"></div></a>
+        <div>
+          <div class="logo-text-main">Liam</div>
+          <div class="logo-text-sub">Game Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+	<section class="filters">
+        <input type="text" id="search" placeholder="Search games..." />
+        <select id="category">
+            <option value="">Category</option>
+            <option value="3D Game">3D Game</option>
+            <option value="2D Game">2D Game</option>
+            <option value="Website">Website</option>
+        </select>
+        <select id="engine">
+            <option value="">Engine</option>
+            <option value="Unity">Unity</option>
+            <option value="Unreal Engine">Unreal Engine</option>
+            <option value="Godot">Godot</option>
+        </select>
+        <select id="platform">
+            <option value="">Platform</option>
+            <option value="Windows">Windows</option>
+            <option value="Mac">Mac</option>
+            <option value="Linux">Linux</option>
+            <option value="Browser">Browser</option>
+            <option value="VR">Virtual Reality</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+        </select>
+        <select id="genre">
+            <option value="">Genre</option>
+            <option value="Action">Action</option>
+            <option value="Survival">Survival</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Horror">Horror</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="RPG">RPG</option>
+            <option value="Platformer">Platformer</option>
+            <option value="Indie">Indie</option>
+            <option value="Racing">Racing</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Sports">Sports</option>
+        </select>
+    </section>
+
+  	<section class="game-grid" id="gameGrid">
+    	<!-- Cards will be injected here -->
+  	</section>
+	
+    <footer>
+      	<div>
+        	© <span id="year"></span> Liam · Game Developer
+      	</div>
+      	<div class="footer-links" id="contact">
+        	<a href="mailto:wliam4410@gmail.com">Email</a>
+        	<a href="https://liamwils20.itch.io">itch.io</a>
+        	<a href=""></a>
+      	</div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+  	<script src="Script.js"></script>
+</body>
+</html>

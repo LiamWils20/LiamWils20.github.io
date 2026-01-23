@@ -1,14 +1,14 @@
 const games = [
     // The Master Project
-    { title: "The Master Project",
+    { title: "Time Reaper",
       category: "3D Game",
       engine: "Unity",
       platform: ["Windows", "Mac", "Linux"],
-      genre: ["Action", "Adventure", "Platformer", "Indie"],
-      released: "",
+      genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
+      released: "TBD",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Masters Project.html",
-      cover: "images/Project Masters Project/Cover Imag.png",
+      link: "Project Pages/Time Reaper/Time Reaper-main.html",
+      cover: "images/Projects/Game/Time Reaper/Cover Img.png",
     },
     // Dragon Slayer
     { title: "Dragon Slayer",
@@ -18,8 +18,8 @@ const games = [
       genre: ["Action", "Adventure", "Platformer", "Indie"],
       released: "",
       tags: ["2D Game", "Godot"],
-      link: "Projects/Project; Dragon Slayer.html",
-      cover: "images/Project Dragon Slayer/Cover Img.png",
+      link: "Projects/Dragon Slayer-Main.html",
+      cover: "images/Projects/Game/Dragon Slayer/Cover Img.png",
     },
     // VoidTimer
     { title: "VoidTimer",
@@ -30,7 +30,7 @@ const games = [
       released: "",
       tags: ["Website"],
       link: "https://voidtimer.github.io/VoidTimer",
-      cover: "images/Website Thumbnails/VoidTimer Thumbnail.png",
+      cover: "images/Projects/Website/VoidTimer/Cover Image.png",
       btnText: "View Site",
       btnTarget: "_blank"
     },
@@ -43,7 +43,7 @@ const games = [
       released: "",
       tags: ["Website"],
       link: "https://geoblade.github.io",
-      cover: "images/Website Thumbnails/GeoBlade Thumbnail.png",
+      cover: "images/Projects/Website/GeoBlade/Cover Image.png",
       btnText: "View Site",
       btnTarget: "_blank"
     },
@@ -56,7 +56,7 @@ const games = [
       released: "",
       tags: ["Website"],
       link: "https://mysteryboxminigame.github.io",
-      cover: "images/Website Thumbnails/MysteryBox Thumbnail.png",
+      cover: "images/Projects/Website/MysteryBox/Cover Image.png",
       btnText: "View Site",
       btnTarget: "_blank"
     },
@@ -69,7 +69,7 @@ const games = [
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Chub's Revenge.html",
-      cover: "images/Project Chubs Revenge/Cover Image.png",
+      cover: "images/Projects/Game/Chubs Revenge/Cover Image.png",
     },
     // BuildABang
     { title: "BuildABang",
@@ -80,7 +80,7 @@ const games = [
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; BuildABang.html",
-      cover: "images/Project BuildABang/Cover Image.png",
+      cover: "images/Projects/Game/BuildABang/Cover Image.png",
     },
     // Kades Last Stand
     { title: "Kades Last Stand",
@@ -91,7 +91,7 @@ const games = [
       released: "04/10/2024",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Kade's Last Stand.html",
-      cover: "images/Project Kades Last Stand/Cover Image.png",
+      cover: "images/Projects/Game/Kades Last Stand/Cover Image.png",
    },
     // Risen from Hell
     { title: "Risen from Hell",
@@ -102,7 +102,7 @@ const games = [
       released: "21/04/2024",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Risen from Hell.html",
-      cover: "images/Project Risen from Hell/Cover Image.png",
+      cover: "images/Projects/Game/Risen from Hell/Cover Image.png",
     },
     // Wrap It Up
     { title: "Wrap It Up",
@@ -113,7 +113,7 @@ const games = [
       released: "23/12/2023",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Wrap It Up.html",
-      cover: "images/Project Wrap It Up/Cover Image.png",
+      cover: "images/Projects/Game/Wrap It Up/Cover Image.png",
     },
     // Neon Racer
     { title: "Neon Racer",
@@ -124,7 +124,7 @@ const games = [
       released: "27/10/2023",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Neon Racer.html",
-      cover: "images/Project Neon Racer/Cover Img.gif",
+      cover: "images/Projects/Game/Neon Racer/Cover Img.gif",
     },
     // Realm Runner
     { title: "Realm Runner",
@@ -135,8 +135,19 @@ const games = [
       released: "26/07/2023",
       tags: ["3D Game", "Unity"],
       link: "Projects/Project; Realm Runner.html",
-      cover: "images/Project Realm Runner/Cover Image.png",
+      cover: "images/Projects/Game/Realm Runner/Cover Image.png",
     },
+    // TBD
+    /*{ title: "TBD",
+      category: "3D Game",
+      engine: "Unity",
+      platform: ["Windows", "Mac", "Linux", "Xbox", "PlayStation", "Switch"],
+      genre: ["Indie", "Simulation"],
+      released: "",
+      tags: ["3D Game", "Unity"],
+      link: "",
+      cover: "",
+    },*/
 ];
 
 function renderGames(filter = {}) {
@@ -158,7 +169,7 @@ function renderGames(filter = {}) {
     card.innerHTML = `
         <img src="${game.cover}" alt="${game.title}" />
         <div class="game-info">
-            <h3>${game.title}</h3>
+            <h3><span class="gold">${game.title}</span></h3>
             <p><strong>Released:</strong> ${game.released || "TBD"}</p>
             <p><strong>Platform:</strong> ${game.platform.join(", ")}</p>
 
@@ -166,8 +177,9 @@ function renderGames(filter = {}) {
               ${game.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
             </div> 
         <br>
-            <a class="btn" href="${game.link || '#'}" target="${game.btnTarget || ''}">${game.btnText || 'Learn More'}</a>
+            
         </div>
+        <a class="btn-card" href="${game.link || '#'}" target="${game.btnTarget || ''}">Learn More <span>↗</span></a>
     `;
 
     grid.appendChild(card);

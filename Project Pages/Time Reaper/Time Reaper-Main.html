@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liam | Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Logo.png">
+  
+  <link rel="stylesheet" href="../../css/Style.css">
+  <link rel="stylesheet" href="../../css/GamePage.css">
+</head>
+
+
+<body>
+  <div class="frame">
+    <header>
+      <div class="logo-mark">
+        <a href="../../index.html"><div class="logo-icon"><img src="../../images/Logo.png" alt="Logo"></div></a>
+        <div>
+          <div class="logo-text-main">Liam</div>
+          <div class="logo-text-sub">Game Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="">About</a>
+        <a href="">Contributions</a>
+        <a href="">Logs</a>
+        <a href="">Download</a>
+      </nav>
+    </header>
+
+    <div class="banner">
+        <img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="">
+    </div>
+
+    <div class="row-scrn">
+		<div class="scrn-col">
+			<img 
+                src="../../images/Projects/Game/Time Reaper/Cover Img.png" 
+                alt=""
+                class="modal-img"
+            >
+		</div>
+	</div>
+
+	<project>
+        
+        <!-- About -->
+		<section class="project-section">
+			<h2>About</h2>
+            <p>Time Reaper is a story-driven realm, where you the player must scale and traverse the lands of La-jor, 
+                for revenge with the added bonus of saving the human race along the way. </p>
+            <br>
+            <p>This game is being developed as part of a masters course with SAE Institute, 
+                want to <a href="../../Journey/SAE-2026-MastersCourse.html"><span class="gold">Learn More</span></a>. </p>
+		</section>
+
+        <!-- My Contributions -->
+        <section class="project-section">
+			<h2>My Contributions</h2>
+            <ul class="project-list">
+                <li>Game & narrative design</li>
+                <li>Core gameplay systems</li>
+                <li>Level & world design</li>
+                <li>Programming & prototyping</li>
+                <li>Project planning & documentation</li>
+                <li>Basically Everything</li>
+            </ul>
+		</section>
+
+        <!-- TEAM -->
+        <section class="project-section">
+            <h2>The Team</h2>
+            <p>
+               Time Reaper is developed by only one person. <br>
+               Please note, all visuals within the game are not of my creation. 
+            </p> <br>
+
+            <ul class="project-list">
+                <li><strong>Liam</strong> — Game Design, Programming, and Asset Collection</li>
+            </ul>
+        </section>
+	</project>
+
+    <!-- Image Modal -->
+    <div id="imgModal" class="img-modal">
+        <span class="img-close">&times;</span>
+        <img class="img-modal-content" id="modalImg">
+    </div>
+	
+
+    <footer>
+      <div>
+        © <span id="year"></span> Liam · Game Developer
+      </div>
+      <div class="footer-links" id="contact">
+        <a href="mailto:wliam4410@gmail.com">Email</a>
+        <a href="https://liamwils20.itch.io">itch.io</a>
+        <a href=""></a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".img-close");
+
+    function openModal(img) {
+      modal.classList.remove("closing");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      modal.classList.add("closing");
+
+      setTimeout(() => {
+        modal.style.display = "none";
+        modal.classList.remove("closing");
+        modalImg.src = "";
+      }, 200); // must match zoomOut duration
+    }
+
+    document.querySelectorAll(".modal-img").forEach(img => {
+      img.onclick = () => openModal(img);
+    });
+
+    closeBtn.onclick = closeModal;
+
+    modal.onclick = (e) => {
+      if (e.target === modal) closeModal();
+    };
+  });
+
+  </script>
+
+
+</body>
+</html>
