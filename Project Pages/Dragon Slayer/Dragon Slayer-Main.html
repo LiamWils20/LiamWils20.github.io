@@ -29,81 +29,99 @@
     </header>
 
     <div class="banner">
-        <img src="../../images/Projects/Game/Time Reaper/Cover Img.png" alt="">
-        <a class="play-btn" target="" href="#">Come back in <p id="countdown"></p></a>
+        <img src="../../images/Projects/Game/Dragon Slayer/Banner Img.png" alt="">
+        <a class="play-btn" href="https://liamwils20.itch.io/dragon-slayer-2d">Play Now</a>
     </div>
-
+    <!-- #region Scrn Column -->
     <div class="row-scrn">
 		<div class="scrn-col">
 			<img 
-                src="../../images/Projects/Game/Time Reaper/Cover Img.png" 
-                alt=""
+                src="" 
+                alt="To Come Soon"
                 class="modal-img"
             >
 		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="" 
+                alt="To Come Soon"
+                class="modal-img"
+            >
+		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="" 
+                alt="To Come Soon"
+                class="modal-img"
+            >
+		</div>
+
+        <div class="scrn-col">
+			<img 
+                src="" 
+                alt="To Come Soon"
+                class="modal-img"
+            >
+		</div>  
 	</div>
+    <!-- #endregion Gallery -->
 
 	<project>
         
-        <!-- ABOUT -->
+        <!-- About -->
 		<section class="project-section">
 			<h2>About</h2>
-            <p>Time Reaper is a story-driven realm, where you the player must scale and traverse the lands of La-jor, 
-                for revenge with the added bonus of saving the human race along the way. </p>
-            <br>
-            <p>This game is being developed as part of a masters course with SAE Institute, 
-                want to <a href="../../Journey/SAE-2026-MastersCourse.html"><span class="gold">Learn More</span></a>. </p>
+            <p>Dragon Slayer is a 2D Adventure of revenge, courage, and fire. </p> <br> 
+			<p>Your family is gone. Burned to ash by the fury of the dragons. <br>
+			   All that remains is you - and the steal in your hand. </p> <br>
+			<p>Step into the shoes of the lone warrior on a quest for vengeance in Dragon Slayer, 
+				a 2D pixel-style adventure where survival means courage, and every swing of your blade brings you closer to justice. 
+			</p>
 		</section>
 
-        <!-- CONTRIBUTION -->
+        <!-- Project Backstory -->
+		<section class="project-section">
+			<h2>Project Backstory</h2>
+            <p>Dragon Slayer, was designed and developed as a learning project for me 
+				to explore and understand 2D development within the Godot Engine,
+				which is a new engine to me and therefore my desire to learn the 
+				engine got the better of me causing me to study up and learn what I can. 
+			</p>
+		</section>
+
+        <!-- Controls -->
+        <section class="project-section">
+			<h2>Keyboard Controls</h2>
+            <ul class="project-list">
+                <li>AD - Move</li>
+                <li>Space - Jump</li>
+                <li>LMB - Attack</li>
+                <li>Escape - Pause</li>
+            </ul>
+		</section>
+
+        <!-- My Contributions -->
         <section class="project-section">
 			<h2>My Contributions</h2>
             <ul class="project-list">
-                <li>Game & narrative design</li>
-                <li>Core gameplay systems</li>
-                <li>Level & world design</li>
-                <li>Programming & prototyping</li>
-                <li>Project planning & documentation</li>
-                <li>Basically Everything</li>
+				<li>Game Designer & Writer</li>
+                <li>UI Main Menu Programmer & Designer</li>
+                <li>Player Systems Programmer & Coordinator</li>
+                <li>Sound & World Objects Programmer</li>
+                <li>Animation Implementation and Programming</li>
+				<li>And Asset Designer & Artist</li>
             </ul>
 		</section>
 
-        <!-- TEAM -->
-        <section class="project-section">
-            <h2>The Team</h2>
-            <p>
-               Time Reaper is developed by only one person. <br>
-               Please note, all visuals within the game are not of my creation. 
-            </p> <br>
-
-            <ul class="project-list">
-                <li><strong>Liam</strong> — Game Design, Programming, and Asset Collection</li>
-            </ul>
-        </section>
-
-		<!-- GALLERY -->
+        <!-- GALLERY -->
         <section class="project-section">
             <h2>Gallery</h2>
             <p>
 
             <ul class="project-gallery">
                 <div class="project-gallery-col-blank">
-			    	<img src="" alt="" class="modal-img">
-		    	</div>
-				<div class="project-gallery-col-blank">
-			    	<img src="" alt="" class="modal-img">
-		    	</div>
-				<div class="project-gallery-col-blank">
-			    	<img src="" alt="" class="modal-img">
-		    	</div>
-				<div class="project-gallery-col-blank">
-			    	<img src="" alt="" class="modal-img">
-		    	</div>
-				<div class="project-gallery-col-blank">
-			    	<img src="" alt="" class="modal-img">
-		    	</div>
-				
-				<div class="project-gallery-col-blank">
 			    	<img src="" alt="" class="modal-img">
 		    	</div>
 				<div class="project-gallery-col-blank">
@@ -143,33 +161,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Set the release date here
-    const releaseDate = new Date("2026-09-30T16:00:00").getTime();
-
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = releaseDate - now;
-
-      if (distance <= 0) {
-        countdownEl.textContent = "Game Released!";
-        clearInterval(timer);
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    // Run immediately so there's no delay
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
 
     document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("imgModal");

@@ -145,7 +145,7 @@
     justify-content: space-around;
 }
 .project-gallery-col-blank{
-    width: 150px;
+    width: 160px;
     height: 100px;
     border-radius: 30px;
 }
@@ -156,9 +156,12 @@
 .project-gallery-col img {
     width: 150px;
     height: 100px;
-    border-radius: 30px;
+    border-radius: 15px;
     transition: transform 0.5s;
-    border: 2px solid black;
+    border: 1px solid rgba(245, 210, 107, 0.25);
+    box-shadow:
+        0 0 0 1px rgba(245, 210, 107, 0.12),
+        0 24px 80px rgba(0, 0, 0, 0.9);
 }
 .project-gallery-col img:hover{
     transform: scale(1.5);
@@ -190,6 +193,15 @@
   height: 2px;
   background: linear-gradient(90deg, #d4af37, transparent);
   margin-top: 8px;
+}
+
+.about-image img{
+    width: 75%;
+    border-radius: 15px;
+    border: 1px solid rgba(245, 210, 107, 0.25);
+    box-shadow:
+        0 0 0 1px rgba(245, 210, 107, 0.12),
+        0 24px 80px rgba(0, 0, 0, 0.9);
 }
 
 /* Lists */

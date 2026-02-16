@@ -18,7 +18,7 @@ const games = [
       genre: ["Action", "Adventure", "Platformer", "Indie"],
       released: "",
       tags: ["2D Game", "Godot"],
-      link: "Projects/Dragon Slayer-Main.html",
+      link: "Project Pages/Dragon Slayer/Dragon Slayer-Main.html",
       cover: "images/Projects/Game/Dragon Slayer/Cover Img.png",
     },
     // VoidTimer
@@ -29,7 +29,7 @@ const games = [
       genre: [""],
       released: "",
       tags: ["Website"],
-      link: "https://voidtimer.github.io/VoidTimer",
+      link: "https://voidtimer.github.io/VoidTimer/",
       cover: "images/Projects/Website/VoidTimer/Cover Image.png",
       btnText: "View Site",
       btnTarget: "_blank"
@@ -68,8 +68,8 @@ const games = [
       genre: ["Survival", "Indie"],
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Chub's Revenge.html",
-      cover: "images/Projects/Game/Chubs Revenge/Cover Image.png",
+      link: "Project Pages/Chub's Revenge/Chub's Revenge-Main.html",
+      cover: "images/Projects/Game/Chub's Revenge/Cover Image.png",
     },
     // BuildABang
     { title: "BuildABang",
@@ -79,7 +79,7 @@ const games = [
       genre: ["Survival", "Indie"],
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; BuildABang.html",
+      link: "Project Pages/BuildABang/BuildABang-Main.html",
       cover: "images/Projects/Game/BuildABang/Cover Image.png",
     },
     // Kades Last Stand
@@ -90,7 +90,7 @@ const games = [
       genre: ["Horror", "Indie", "Runner"],
       released: "04/10/2024",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Kade's Last Stand.html",
+      link: "Project Pages/Kade's Last Stand/Kade's Last Stand-Main.html",
       cover: "images/Projects/Game/Kades Last Stand/Cover Image.png",
    },
     // Risen from Hell
@@ -101,7 +101,7 @@ const games = [
       genre: ["Horror", "Indie", "Runner"],
       released: "21/04/2024",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Risen from Hell.html",
+      link: "Project Pages/Risen From Hell/Risen From Hell-Main.html",
       cover: "images/Projects/Game/Risen from Hell/Cover Image.png",
     },
     // Wrap It Up
@@ -112,7 +112,7 @@ const games = [
       genre: ["Simulation", "Indie", "Holiday"],
       released: "23/12/2023",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Wrap It Up.html",
+      link: "Project Pages/Wrap It Up/Wrap It Up-Main.html",
       cover: "images/Projects/Game/Wrap It Up/Cover Image.png",
     },
     // Neon Racer
@@ -123,7 +123,7 @@ const games = [
       genre: ["Racing", "Indie"],
       released: "27/10/2023",
       tags: ["3D Game", "Unity"],
-      link: "Projects/Project; Neon Racer.html",
+      link: "Project Pages/Neon Racer/Neon Racer-Main.html",
       cover: "images/Projects/Game/Neon Racer/Cover Img.gif",
     },
     // Realm Runner
@@ -179,7 +179,7 @@ function renderGames(filter = {}) {
         <br>
             
         </div>
-        <a class="btn-card" href="${game.link || '#'}" target="${game.btnTarget || ''}">Learn More <span>↗</span></a>
+        <a class="btn-card" href="${game.link || '#'}" target="${game.btnTarget || ''}">${game.btnText || 'Learn More'} <span>↗</span></a>
     `;
 
     grid.appendChild(card);
