@@ -10,6 +10,17 @@ const games = [
       link: "Project Pages/Time Reaper/Time Reaper-Main.html",
       cover: "images/Projects/Game/Time Reaper/Cover Img.png",
     },
+    // The Master Project
+    { title: "4 Mini Godot Projects",
+      category: "2D Game",
+      engine: "Godot",
+      platform: ["Windows", "Mac", "Linux"],
+      genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
+      released: "TBD",
+      tags: ["2D Game", "Godot"],
+      link: "Project Pages/4 Mini Godot Projects/4 Mini Godot Projects-Main.html",
+      cover: "images/Projects/Game/4 Mini Godot Projects/Cover Img.png",
+    },
     // Dragon Slayer
     { title: "Dragon Slayer",
       category: "2D Game",
