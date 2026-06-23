@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Liam | Game Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../../images/Logo.png">
+  <link rel="icon" href="images/Logo.png">
   
   <link rel="stylesheet" href="../css/Style.css">
   <link rel="stylesheet" href="../css/BlogStyle.css">
@@ -35,11 +35,436 @@
 	<h1 class="page-title">Behind the Masters</h1>
     <p class="page-subtitle">Development logs, thoughts, and progress</p>
 
-	<div style="text-align: center; margin: 20px 0;">
-		<a class="blog-button" href="#first-post" id="top">Jump to First Post</a>
+	<button class="blog-btn" id="top"><a href="#bottom">Jump to Bottom</a></button>
+
+    <div class="module-link-row">
+		<div class="module-link active" id="btn-module-1">
+            <button onclick="switchModule('module-1', this.parentElement)"> 
+                <img class="project-image" src="../images/Module Titles/Module 1.png" alt="A banner image for Module 2">
+            </button>
+		</div>
+
+        <div class="break-link" id="btn-db-1">
+            <button onclick="switchModule('db-1', this.parentElement)"> 
+                <img class="project-image" src="../images/Module Titles/During Break One.png" alt="A banner image for Break 1">
+            </button>
+		</div>
+
+        <div class="module-link" id="btn-module-2">
+            <button onclick="switchModule('module-2', this.parentElement)"> 
+                <img class="project-image" src="../images/Module Titles/Module 2.png" alt="A banner image for Module 2">
+            </button>
+		</div>
+
+        <div class="break-link" id="btn-db-2">
+            <button onclick="switchModule('db-2', this.parentElement)"> 
+                <img class="project-image" src="../images/Module Titles/During Break Two.png" alt="A banner image for Break 1">
+            </button>
+		</div>
+        
+        <div class="module-link" id="btn-module-3">
+            <button onclick="switchModule('module-3', this.parentElement)"> 
+                <img class="project-image" src="../images/Module Titles/Module 3.png" alt="A banner image for Module 3">
+            </button>
+		</div>
 	</div>
 
-    <div class="blog-posts-container">
+    <!-- #region Module 1 Content -->
+    <div class="module-1">
+        <!-- #region Final Module Entry- Friday 12th December 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">12</span>
+						<span class="month">DEC</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Final Module Entry</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Final Entry</span>
+							<span class="tag">Final Module Presentation</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Final Stretch</h2>
+                    <p>I made a mistake. I kept putting off creating the presentation until this week, despite the conference 
+                        being this week. Before this week, I had worked a little bit on the presentation however not that much. 
+                        So, on Monday (8th Dec) I spent the entire day almost over 8 maybe 9 hours trying to get the presentation 
+                        ready for Tuesday, which was when the conference was. I had it almost complete by the end of Monday. </p>
+                    <br> 
+                    <p>Then on Tuesday (9th Dec), we had our presentation conference, each student went through and talked about
+                        their presentation, mine was however at 3.30 which was great, as it gave me pretty much the entire day to
+                        finalise and flush out the presentation. Which allowed me to present and deliver a finished presentation as
+                        opposed to presenting a half finished presentation. </p>
+                    <br>
+                    <p>On Wednesday (10th), they hosted a presentation for those within their 2nd and 3rd modules, however I was unable
+                        to attend so I’ve no clue of what occurred and I doubt the job. </p>
+                    <br>
+                    <p>The rest of the week was spent finalising the MPP, Poster, and these here learning journals. I had the MPP
+                        completed by the end of Wednesday and the Poster was done by the end of Thursday alongside these Journals. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region MPP Feedback - Friday 5th December 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">5</span>
+						<span class="month">DEC</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Drats!</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">End Module Presentation</span>
+							<span class="tag">Drats!</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>FEEDBACK!</h2>
+                    <p>During this week, I sent my MPP and Abstract off to Professor X and my Learning Supervisor for feedback, I received feedback from John the same day,
+                        and I instantly started sifting through his feedback working on them one by one. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region Pitch Presentation - Friday 28th November 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">28</span>
+						<span class="month">NOV</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Pitch Presentation</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Pitch Presentation</span>
+							<span class="tag">Short & Snappy</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>On Tuesday I wrote up a short pitch presentation for Wednesday's lecture. I ensured it was brief, and yet interesting,
+                        and it was around 3 maybe 4 sentences longer ensuring that it was below a minute. On that WednesdayI believe it was
+                        timed at roughly 30 seconds which I thought was lovely. </p>
+                    <br>
+                    <p>During Wednesday's lecture we had the pitch presentation. Everyone did a short 1 to 5 minute presentation pitching
+                        our initial concept for the project, small insights into the development and writing aspects. Nothing crazy, but
+                        still interesting to actually see. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region Drats! - Friday 7th November 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">7</span>
+						<span class="month">NOV</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Drats!</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">End Module Presentation</span>
+							<span class="tag">Drats!</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>During Wednesday's lecture, John outlined and explained some research presentation skills. Which helps us prepare for our
+                        upcoming 20 minute presentations on week 13. He outlines that clear and concise speaking is essential, as well as pauses
+                        throughout to allow the audience to catch up and acknowledge what was just said. The presentation must also contain almost
+                        everything to do with the project.. </p>
+                    
+                    <h2>The Presentation</h2>
+                    <p> After Professor X's presentation explaining the necessary skills required for performing a presentation, it had me worried
+                        and panicked as I had forgotten about the presentation, and I mine was no where near ready. I had begun work on it before, 
+                        but only a dabble I didn't work on it for long. But now I need to bunker down and get this presentationr ready.
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region Module 2 Insights - Friday 31st October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">31</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Module 2 Insights</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Module 2</span>
+							<span class="tag">Insights</span>
+                            <span class="tag">Next Steps</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>During Wednesday, Professor X spent the majority of the time this week discussing the next module, module 2, 
+                        the module where we focus on professional development. Professor X briefly outlined the portfolio brief for module 2. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region Citations Rule - Friday 24th October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">24</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Citations Rule</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Citation</span>
+							<span class="tag">Why?</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>During Wednesday's lecture Professor X describes how to cite, reference and create a bibliography. 
+                        I will not lie, when I circled back round to the methodology and the annotated bibliography 
+                        I had forgotten about citing my text. </p>
+                    <br>
+                    <p>Another meeting with Firdaus, my advisor. I mentioned the situation with Unity, which to be fair, 
+                        I should have mentioned sooner. He reviewed more of my work, gave pointers towards the MPP, and 
+                        presentation, I think he also reviewed the abstract. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region Ethical Considerations - Friday 17th October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">17</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Ethical Considerations are Key, incl. Learning Journals</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Ethical Considerations</span>
+							<span class="tag">Lerning Journals</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>During Wednesday, Professor X displayed learning journal examples. Sadly though, I haven’t a single clue as to a way I can better design my learning journals. 
+                        Hopefully next trimester, I’ll have a better outline and understanding of learning journal layouts to which would be best for my journal. </p>
+                    <h2>The Project</h2>
+                    <p>As for work done this week, I started working on the project breakdown and timeline. Still not finalised the methodology, or annotated
+                        bibliography though. I just wanted to work on something new, for the time being. Change it up and everything ya know. I outlined a
+                        timeline for the next few modules. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region More Methodologies - Friday 10th October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">10</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>More Methodologies</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Methodologies</span>
+							<span class="tag">Theoretical Perspectives</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>This weeks scheduled lecture Professor X continued last weeks discussions by further explaining theoretcal perspectives and methodologies. 
+                        He outlined what Quantitative and Qualitative research is and that you can merge them, he also went over a few extra ones incase people wanted to explore them. </p>
+                    <br>
+                    <p>This week I also had another discussion with Firdaus, we discussed more regarding the game project itself, and he reviewed some of my research and gave pointers
+                        regarding both. </p>
+                    <h2>Writing Drama</h2>
+                    <p>As for work done this week, I began working on my methodologies and annotated bibliography, as these are the largest of sections and I knew that they would take 
+                        several weeks to actually complete and I also continued writing my methodologies and annotated bibliography for the MPP. However, towards the end of this week 
+                        my computer decided to bug out, so I performed a factory reset deleting all data, including Unity hub and the editor. After the factory reset, I did attempt to 
+                        re-install the unity hub and editor, the hub installed no issues. However, the unity editor doesn’t appear to want to install.. So, until this gets fixed I won’t 
+                        be able to progress further on the physical project which is okay I suppose, it allows me to further focus on the written element of the project. </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+        <!-- #region Urgh Paradigms - Friday 3rd October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">03</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Urgh Paradigms</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Paradigms</span>
+							<span class="tag">Lots of Information</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>During Wednesday's webinar, Professor X discussed and explained what paradigms are and the different forms of paradigns, these are as follows;
+                        <ul class="blog-list">
+                            <li>Positivism</li>
+                            <li>Interpretivism</li>
+                            <li>Constructivism</li>
+                            <li>Transformativism</li>
+                            <li>Pragmatism</li>
+                        </ul>
+                        I won't bore you with the in-depth details of each paradigm, however we are expected to choose one which best fits our project and use it as it was intended. 
+                    </p>
+                    <h2>Physical Project</h2>
+                    <p>I did a little more work on the physical project this week as there was a small bug with the time-slow effect, so I fixed that. Then I implemented the enemy movement
+                        and began world building by utilising grey boxing, then I implemented the player walk animations. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+        <!-- #region What's the Project? - Friday 26th September 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">26</span>
+						<span class="month">SEP</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>What's the Project?</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">The Project</span>
+							<span class="tag">Unity Engine</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>The Meetings</h2>
+                    <p>On Monday, I had a meeting with my learning supervisor to discuss the project, my aims and intentions, what I hoped to do and get out of the course. 
+                        The meeting went well, we discussed the project and my intentions, I explained that I wanted to make a game in Unreal Engine, and that I wanted
+                        to focus on learning the engine and its capabilities. We also discussed potential ideas for the project, and I explained that I wanted to make
+                        a survival game with all survival mechanics and systems such as; hunger, thirst, stamina, health, crafting, building and more. 
+                        He seemed to like the idea, but thought it might be a bit ambitious for the time frame, especially considering I have no experience with Unreal Engine.
+                        He proposed a new concept, a simpler one, one which seemed quite fun also. 
+                    </p>
+                    <br>
+                    <p>On Wednesday, I had a meeting with my lecturer 'Professor X', as I had renamed him. He hosted a lecture where he discussed in extreme detail, the
+                        portfolio bnrief. He explained each requirement, and even displayed some examples for each on screen. He outlines them in order, the order is as follows;
+                        <ul class="blog-list">
+                            <li><span class="gold">Abstract</span><p>A 200 to 300 word summary of the MPP as an entirety</p></li>
+                            <li><span class="gold">Conference Presentation</span><p>A 20-minute presentation with 10-minute questions, hosted on December 8th.</p></li>
+                            <li><span class="gold">Research Poster</span><p>A visual representation of the abstract, with limited words.</p></li>
+                            <li><span class="gold">Major Project Proposal (MPP)</span><p>A 6000 word document presenting the project concept & plan, and the research to support it.</p></li>
+                            <li><span class="gold">Learning Journals</span><p>6 entries minimum requirement, with roughly 1800 words across all 6. </p></li>
+                        </ul>
+                    </p>
+                    <h2>My Epiphany</h2>
+                    <p>Towards the end of the week I had my eurika moment and thought of a brilliant idea, well for me at the time I thought it was magnificent. Anyways, 
+                        I thought what if the world was in a state of collapse, or the beginning of a downward spiral which inevitbly is bringing the world to a it's end.
+                        And so I thought of a war of the world, where each race, faction and congregation joined in the fight and the world became a mass warzone, but one man
+                        wanted it to stop as they realised the world was on the brink of collapse, and they wanted to save it. So they went on a journey to find a way to stop 
+                        the war, and save the world.
+                    </p>
+                    <h2>The Concept</h2>
+                    <p>The game concept is a fantasy-style action adventure, where the protagonist embarks on a journey to save the world from destruction by it's inhabitants. 
+                        It is a world-wide race war where majority of the races formed a unity council, which is called the "Phoenix Order", and their sole purpose is wiping out
+                        the human race, unbeknowst to them this would inevitably bring on the downfall of time. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region First Post - Friday 17th September 2025 -->
+            <article id="first-post" class="blog-post featured">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">17</span>
+						<span class="month">SEP</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Welcome to "Behind the Masters"!</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">First Post</span>
+							<span class="tag">Welcome</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>In the Beginning</h2>
+					<p>Hey everyone, and welcome to the first official journal entry for "Behind the Masters", this 
+                        is a space where I will be sharing my educational journey throughout my masters degree in games
+                        programming. The course title is "Msc Proffession Practice in Games Programming", this course is hosted by
+                        the SAE Institute. </p>
+                    <br>
+                    <h2>About SAE Institute</h2>
+                    <p>SAE Institute is a global leader in creative media education, offering a range of programs in fields 
+                        such as audio, film, and games. With campuses in major cities around the world, SAE provides students 
+                        with hands-on experience and industry-relevant skills.</p>
+                        
+                    <p>They have 40 campuses world wide, providing their educational skills to 21 different countries. I personally 
+                        highly recommend SAE Institute to anyone looking to get into the creative media industry, as they provide a
+                        great learning environment and have a strong focus on practical skills and industry connections.</p>
+                    <br>
+                    <h2>The First Lecture</h2>
+                    <p>The week began like any other, however when the day reached Wednesday something new occured. A lecture was planned and scheduled. The lecture was like any other first lecture,
+                        the course lead, I'll call him "Professor X". So, Professor X opend up the lecture and welcomed everyone, he told us a littl ebut about himself and then we went around the online
+                        room, and introduced ourselves one by one. </p>
+                    <br>
+                    <p>After the introductions, Professor X spent the rest of the lecture talking and discussing the course ahead. Key points he spoke on was; cosmos being the universities educational study 
+                        platform, where all assignments, course details and contents will be located and found. An introduction to the postgraduate study, explaining that all lectures are recorded and 
+                        are live on Wednesday at 10 am UK time. He then outlines key words and skills which he’ll reference quite often some of which are; critical thinking, original thoughts, self-direction, 
+                        making an argument and many more. He then outlined the structure of study. </p>
+                    <br>
+                    <p>It was all rather intriguing, and quite thorough despite it being brief in each section. Almost immediately after this lecture I began working, attempting to figure out what it is I wanted
+                        to learn and study. I wanted to use the ‘Unreal engine’, I was set in stone on that one. As I’m unfamiliar with this and it would provide more of a learning experience than using an engine 
+                        which I was already familiar with, however no idea was springing out to me, so much so that I didn’t see the point in writing the ideas down.. </p>
+                    <br>
+                    <p>This week concluded with limited productivity, besides initially beginning to think about an idea, about the course, about what it is I wanted to achieve, all I knew was what engine I'd be 
+                        using ‘Unreal Engine’ other than that, nothing. </p>
+
+                    <h2>About the Course</h2>
+                    <p>It is going to last at least a year, with 3 trimesters, each trimester requires a submission of work. </p>
+                    <p>The trimester plan is as follows;</p>
+                    <li style="list-style-type: none;">"Project Planning & Theoretical Principles"</li>
+                    <li style="list-style-type: none;">"Professional Development Scheme"</li>
+                    <li style="list-style-type: none;">"Creative Media Major Project"</li>
+                    <p></p>
+                    <p>Each trimester will have a mix of practical and theoretical work, with a focus on developing skills
+                        in game development, programming, and project management. The course is designed to prepare students
+                        for careers in the games industry, with a strong emphasis on professional practice and industry standards.</p>
+                    <br>
+                </div>
+            </article>
+        <!-- #endregion -->        
+    </div>
+    <!-- #endregion Module 1 Content -->
+    
+    <!-- #region During Break One Content -->
+    <div class="db-1 hidden">
         <!-- #region .. - Friday 3rd October 2025 -->
             <article class="blog-post">
 				<div class="post-header">
@@ -74,9 +499,252 @@
 				</div>
             </article>
         <!-- #endregion -->
-       
     </div>
+    <!-- #endregion During Break One Content -->
+
+    <!-- #region Module 2 Content -->
+    <div id="first-post" class="module-2 hidden">
+        <!-- #region .. - Friday 13th February 2026 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">13</span>
+						<span class="month">FEB</span>
+						<span class="year">2026</span>
+					</div>
+					<div class="post-title">
+						<h3>Project Plan</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Plan of the Future</span>
+							<span class="tag">Learning Agreement</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>First Deliverable Completed</h2>
+                    <p></p>
+				</div>
+            </article>
+        <!-- #endregion -->
+
+        <!-- #region .. - Friday 13th February 2026 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">13</span>
+						<span class="month">FEB</span>
+						<span class="year">2026</span>
+					</div>
+					<div class="post-title">
+						<h3>The Development Origins</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Development Origins</span>
+							<span class="tag">Restart</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>Module 2: Professional Development Scheme</h2>
+                    <p>This module </p>
+                    <h2>Time Reaper Began!</h2>
+                    <p>Development on Time Reaper started off last module, however due to a bug on the player movement I opted to begin development once more, in a hopes to prevent the bug from reoccuring. 
+                        This did not go to plan though, as soon as I had developed the character the bug revealed itself once more. So, I attempted to get to the bottom of this bug, in the previous iteration
+                        of this project I had tried everything to fix this bug, except one thing which was to explore the InputAction asset. I realised there were some inputs which I didn't add, so I deleted
+                        all inputs, and re-added back the ones needed for the player movement. Which to my surpise fixed the bug. I was thrilled and yet a little confused as to why that fixed the bug.</p>
+                    <h2>Level Design</h2>
+                    <h3>Pre-mature Building</h3>
+                    <p>I started the level design off by attempting to wing it, and not plan anything for it. I began exploring the creation of mountains to act as the world barrier along the coast of the island. 
+                        I decided to attempt this through the use of terrain objects, and sculpting. However this did not look as intended, so I scrapt it quite quick. Sadly, I didn't capture any images of what it
+                        looked like. 
+                    </p>
+                    <h3>Planning</h3>
+                    <p>As for designing the first zone of the game, I crafted a level layout, using Ibis Paint on the iPad. <br> 
+                    As you might assume, 
+                        <ul class="blog-list">
+                            <li><span class="gold">Black Boxes</span><p>Represent the village house locations</p></li>
+                            <li><span class="gold">Cream/Yellow Box</span><p>Represent the player's home & spawn point</p></li>
+                            <li><span class="gold">Cyan Arrows</span><p>Represent possible directions the player can travel</p></li>
+                            <li><span class="gold">Green Perimeter</span><p>Represent the exit to the village, and end of the level</p></li>
+                            <li><span class="gold">Red Dots</span><p>Represent enemy spawn locations, I forgot to add more</p></li>
+                        </ul>
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Deisgn 1.png" alt="A level map for the first zone of the game."> <br>
+                    <p>Not much thought or planning went into this design version though, so I am currently thinking about creating a new version, possibly a better, more improved version of the design. </p>
+                    <h3>Building Progress</h3>
+                    <p>The progress of the level construction after planning the layout was great, I found a free asset pack began building with that until I realised that there was a weird glistening effect
+                        on some of the buildings, only the buildings which used posts. So, I scrapped those particular asset and began building the level with the remaining assets. Which caused it to not look
+                        as good, and rather repetative. I built a few streets before I then realised I didn't like the layout of the village. So, I halted the level building until a new design was created, and
+                        ready to be utilised. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+    </div>
+    <!-- #endregion Module 2 Content -->
+
+    <!-- #region During Break Two Content -->
+    <div class="db-2 hidden">
+       <!-- #region Player Features - Friday 08th May 2026 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">08</span>
+						<span class="month">MAY</span>
+						<span class="year">2026</span>
+					</div>
+					<div class="post-title">
+						<h3>Player Features</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Features Added</span>
+							<span class="tag">Improvements</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>Player Jump System</h2>
+                    <p>I added the player jump system. Figured a simplist rigidbody addforce would work fine until I had time to improve it. I do plan to use a raycast to detect if the player is grounded
+                        or not, to prevent the player from being able to jump infinitely. I also plan to add a strong jump feature as well, which would allow the player to charge their jump, giving the 
+                        ability to jump further, then a double jump later on allowing the player to use their ability to jump twice within the sky. Using the add force method allows players to 
+                    jump for ever until their heart is content, which is why later I will 100% change it to a physicas ray to detect the ground. </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Jump System.gif" alt=""> <br>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+
+        <!-- #region Level Design - Wednesday 06th & Thursday 07th May 2026 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">06 & 07</span>
+						<span class="month">MAY</span>
+						<span class="year">2026</span>
+					</div>
+					<div class="post-title">
+						<h3>The Level Design</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Map Done</span>
+							<span class="tag">Looking Good</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>Design 1</h2>
+                    <p>The first of a few designs. It's big and yet simple. The main thing I dislike about this design, is how the houses are curved and randomly placed. 
+                        I was thinking let's put the player's house in the middle, this'll be where the player begins. I was also thinking about making the village look a little random, and unplanned.
+                        To give it more a medieval, rustic and old vibe. But after making more designs I don't think I like the curve I've gone for. It'd look better if the buildings where in rows but 
+                        rotated slightly.
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Deisgn 1.png" alt=""> <br>
+                    <h2>Design 2</h2>
+                    <p>A similar sized level to the first design, more planned and structured. I dislike how little thought went into the market place zone, and the randomly placed animal pen near 
+                        the player's house. And the main thing I dislike about this design is how easy the level is to escape. If player's know the route they can leave within a matter of minutes. 
+                        I want the level to be more challenging to escape, and not two turns and you're out. I want the player to have to explore the village, and find a route out, 
+                        and not just know the route from the start.
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Deisgn 2.png" alt=""> <br>
+                    <h2>Design 3</h2>
+                    <p>This design I really like. It did take a while for me to actually draw and design it due to the magnitude of the whole level. But I like it none the less. My only consern with
+                        this design is the fact that it could take the player 3 to 4 hours to complete, and if one individual level takes that long players will get bored and lose interest. So,
+                        despite me liking this design I will have to downgrade the amount of houses and buildings within the level to make it more manigable for players to enjoy and complete. 
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Design 3.png" alt=""> <br>
+                    <h2>Design 4</h2>
+                    <p>This design has sort of the right balance between simplisty and complexity, It essentially has 3 to 4 possible routes the player can take to escape the village from their house. 
+                        A few things I dislike about this design is how large the player's house is, and how wide each path is between houses. The width between houses should be smaller, and the player's
+                        house should be in the middle somewhere.
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Design 4.png" alt=""> <br>
+                    <h2>Design 5</h2>
+                    <p>Taking all the dislikes and likes from previous designs, design 5 should not be too simple nor complex, the player's house should be centrally located, there shouldn't be a random
+                        animal pen placed within the village, the market place should be more planned and structured, and the buildings should be in rows but rotated slightly to give it a more rustic vibe.</p>
+                        <br>
+                    <p>A couple of extra features I am considering are adding a hidden pathway that leads to a secret area within the village and randomising the house in which the player lives in, which gives
+                        that randomness to each playthrough, and also adds replayability as well. 
+                    </p>
+                    <img class="blog-image" src="../images/Dev Log Images/Village Zone Design 5.png" alt=""> <br>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+        <!-- #region The Plan - Friday 1st May 2026 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">01</span>
+						<span class="month">MAY</span>
+						<span class="year">2026</span>
+					</div>
+					<div class="post-title">
+						<h3>The Plan</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Planned Break</span>
+							<span class="tag">Can it be done?</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>Breakdown</h2>
+                    <p>So, this break was a total of 4 weeks in length. I decided to spend the first 3 weeks actually having a break from work, I was going to only do 2 weeks break, but the 3rd week also slipped away from me. 
+                        During this break I have a list of tasks I want to complete before the third and final module-begins. These tasks are as follows;
+                        <ul class="blog-list">
+                            <li><span class="gold">Jump System</span></li>
+                            <li><span class="gold">Player Abilities x3</span></li>
+                            <li><span class="gold">Player Attack System</span></li>
+                            <li><span class="gold">Player Stamina</span></li>
+                            <li><span class="gold">Redesign Village Layout & Build it</span></li>
+                            <li><span class="gold">Main Menu & Pause Menu Design & Systems</span></li>
+                        </ul>
+                        I plan to work mostly on the level design during this week. If I am able to get anything else completed during the week then that'll be great, but most my focus is on level design due to its importance. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+    
+    </div>
+    <!-- #endregion During Break Two Content -->
+
+    <!-- #region Module 3 Content -->
+    <div class="module-3 hidden">
+        <!-- #region .. - Friday 3rd October 2025 -->
+            <article class="blog-post">
+				<div class="post-header">
+					<div class="post-date">
+						<span class="day">03</span>
+						<span class="month">OCT</span>
+						<span class="year">2025</span>
+					</div>
+					<div class="post-title">
+						<h3>Three Weeks Gone</h3>
+						<span class="post-tags">
+							<span class="tag featured-tag">Three Week Mark</span>
+							<span class="tag">Time Sure Does Fly</span>
+						</span>
+					</div>
+				</div>
+				<div class="post-content">
+                    <h2>What Happened End of Week 2?</h2>
+                    <p>So, last week ended with the second class of my studies, the webinar covered an assignment overview and project planning.
+                        My project is essentially planned and ready for development. Which I technically started 2 weeks ago. 
+                    </p>
+                    <h2>What Happened on Week 3?</h2>
+                    <p>I have realised recently that time does fly, one moment you're just starting the course, and in the next instant you're 
+                        already three weeks in. This week was a bit uncertain. The webinar on Wednesday went over theoretical perspectives and methodologies.
+                        As soon as the recording goes live I will re-watch it and begin exploring potential research methodologies for my paper. I need to figure this out
+                        before end of week 4, as it may require me to add some data collection features within my project. 
+                    </p>
+                    <p>Also this week I have begun writing my Abstract as well as a gantt chart to help stay focused and on track for this module. 
+                        I should have my Abstract done and written by the end of Monday next week, the gantt chart should be done by end of today. 
+                        Then on Monday, or when the abstract is done, I will be able to move onto the next task which to my knowledge is the presentation. 
+                    </p>
+				</div>
+            </article>
+        <!-- #endregion -->
+    </div>
+    <!-- #endregion Module 3 Content -->
 	
+    <button class="blog-btn" id="bottom"><a href="#top">Jump to Top</a></button>
 
     <footer>
       <div>
@@ -90,6 +758,25 @@
     </footer>
   </div>
 
+  <script>
+    function switchModule(moduleClass, buttonElement) {
+      // Remove active class from all buttons
+      document.querySelectorAll('.module-link, .break-link').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Add active class to clicked button
+      buttonElement.classList.add('active');
+      
+      // Hide all modules
+      document.querySelectorAll('.module-1, .module-2, .module-3, .db-1, .db-2').forEach(el => {
+        el.classList.add('hidden');
+      });
+      
+      // Show selected module
+      document.querySelector('.' + moduleClass).classList.remove('hidden');
+    }
+  </script>
 
 </body>
 </html>
