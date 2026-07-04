@@ -35,7 +35,7 @@ const games = [
       cover: "images/Projects/Game/4 Mini Godot Projects/Cover Img.png",
     },
     // Dragon Slayer
-    { title: "Dragon Slayer",
+    { title: "Dragon Slayer 2D",
       category: "2D Game",
       engine: "Godot",
       platform: ["Windows", "Mac", "Linux"],
