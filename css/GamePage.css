@@ -41,6 +41,73 @@
         0 16px 40px rgba(0, 0, 0, 0.95);
     }
 
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    padding: 32px 16px;
+    background: rgba(7, 4, 1, 0.82);
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    width: min(960px, 100%);
+    margin: 0 auto;
+    padding: 52px 24px 24px;
+    border-radius: 30px;
+    border: 1px solid rgba(245, 210, 107, 0.25);
+    background:
+        radial-gradient(circle at top, rgba(245, 210, 107, 0.12), transparent 40%),
+        linear-gradient(180deg, rgba(24, 17, 8, 0.98), rgba(10, 8, 4, 0.98));
+    box-shadow:
+        0 0 0 1px rgba(245, 210, 107, 0.12),
+        0 24px 80px rgba(0, 0, 0, 0.9);
+}
+
+.close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: var(--gold-soft);
+    font-size: 38px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.game-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    border-radius: 999px;
+    padding: 10px 22px;
+    border: 1px solid rgba(245, 210, 107, 0.55);
+    background: linear-gradient(120deg, #1a1205, #3b2a0b);
+    color: var(--gold-soft);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.download-btn:hover {
+    box-shadow: 0 0 18px rgba(245, 210, 107, 0.35);
+}
+
+.modal iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 18px;
+    background: #000;
+}
+
 /* #region Gallery, Row-Scrn & Row-Col */
 .row-scrn {
     float: right;
