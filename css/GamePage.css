@@ -120,7 +120,7 @@
     max-width: 350px;
     max-height: 250px;
     margin-bottom: 50px;
-    transition: transform 0.5s;
+    
 }
 
 .scrn-col img {
@@ -133,9 +133,10 @@
     box-shadow:
         0 0 0 1px rgba(245, 210, 107, 0.12),
         0 24px 80px rgba(0, 0, 0, 0.9);
+    transition: transform 0.5s;
 }
 
-.scrn-col:hover {
+.scrn-col img:hover {
     transform: scale(1.2);
 }
 
