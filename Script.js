@@ -1,131 +1,119 @@
 const games = [
-    // #region Time Reaper
-    // The Master Project
-    /*{ title: "Time Reaper",
-      category: "3D Game",
-      engine: "Unity",
-      platform: ["Windows", "Mac", "Linux"],
-      genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
-      released: "TBD",
-      tags: ["3D Game", "Unity"],
-      link: "Project Pages/Time Reaper/Time Reaper-Main.html",
-      cover: "images/Projects/Game/Time Reaper/Cover Img.png",
-    },*/
-    // #endregion
     // TBD
-    { title: "To Be Revealed",
-      category: "3D Game",
-      engine: "Unity",
-      platform: ["Windows", "Mac", "Linux", "Xbox", "PlayStation", "Switch"],
-      genre: ["Indie", "Local-Coop", "Online Coop", "Cartoon", "Family-Friendly"],
-      released: "In-Development",
-      tags: ["3D Game", "Unity", "Family-Friendly"],
-      link: "Project Pages/TBR/TBR-Main.html",
-      cover: "images/Projects/Game/TBR/Cover Img.png",
+    { title: "Knotty Crew & Crafts Website",
+      category: ["Website"],
+      engine: "",
+      platform: [""],
+      genre: ["Indie", "Simulation"],
+      released: "",
+      tags: ["Website", "Crafters"],
+      link: "",
+      cover: "",
     },
+    
     // 4 Mini Godot Projects
     { title: "4 Mini Godot Projects",
-      category: "2D Game",
+      category: ["3D Game", "2D Game"],
       engine: "Godot",
       platform: ["Windows", "Mac", "Linux"],
       genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
       released: "TBD",
       tags: ["2D Game", "Godot"],
-      link: "Project Pages/4 Mini Godot Projects/4 Mini Godot Projects-Main.html",
-      cover: "images/Projects/Game/4 Mini Godot Projects/Cover Img.png",
+      link: "Project Pages/Game Projects/4 Mini Godot Projects/4 Mini Godot Projects-Main.html",
+      cover: "images/Projects/4 Mini Godot Projects.png",
     },
     // Dragon Slayer
     { title: "Dragon Slayer 2D",
-      category: "2D Game",
+      category: ["2D Game"],
       engine: "Godot",
       platform: ["Windows", "Mac", "Linux"],
       genre: ["Action", "Adventure", "Platformer", "Indie"],
       released: "In-Development",
       tags: ["2D Game", "Godot"],
-      link: "Project Pages/Dragon Slayer/Dragon Slayer-Main.html",
-      cover: "images/Projects/Game/Dragon Slayer/Cover Img.png",
+      link: "Project Pages/Game Projects/Dragon Slayer/Dragon Slayer-Main.html",
+      cover: "images/Projects/Dragon Slayer.png",
     },
     // Chub's Revenge
     { title: "Chub's Revenge",
-      category: "3D Game",
+      category: ["3D Game", "Game Jam"],
       engine: "Unity",
       platform: ["Browser"],
       genre: ["Survival", "Indie"],
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Chub's Revenge/Chub's Revenge-Main.html",
-      cover: "images/Projects/Game/Chub's Revenge/Cover Image.png",
+      link: "Project Pages/Game Projects/Chub's Revenge/Chub's Revenge-Main.html",
+      cover: "images/Projects/Chub's Revenge.png",
     },
     // BuildABang
     { title: "BuildABang",
-      category: "3D Game",
+      category: ["3D Game"],
       engine: "Unity",
       platform: ["Windows", "Mac", "Linux"],
       genre: ["Survival", "Indie"],
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/BuildABang/BuildABang-Main.html",
-      cover: "images/Projects/Game/BuildABang/Cover Image.png",
+      link: "Project Pages/Game Projects/BuildABang/BuildABang-Main.html",
+      cover: "images/Projects/BuildABang.png",
     },
     // Kades Last Stand
     { title: "Kades Last Stand",
-      category: "3D Game",
+      category: ["3D Game", "Game Jam"],
       engine: "Unity",
       platform: ["Windows", "Mac", "Linux"],
       genre: ["Horror", "Indie", "Runner"],
       released: "04/10/2024",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Kade's Last Stand/Kade's Last Stand-Main.html",
-      cover: "images/Projects/Game/Kades Last Stand/Cover Image.png",
+      link: "Project Pages/Game Projects/Kade's Last Stand/Kade's Last Stand-Main.html",
+      cover: "images/Projects/Kade's Last Stand.png",
    },
     // Risen from Hell
     { title: "Risen from Hell",
       platform: ["Windows"],
-      category: "3D Game",
+      category: ["3D Game", "Game Jam"],
       engine: "Unity",
       genre: ["Horror", "Indie", "Runner"],
       released: "21/04/2024",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Risen From Hell/Risen From Hell-Main.html",
-      cover: "images/Projects/Game/Risen from Hell/Cover Image.png",
+      link: "Project Pages/Game Projects/Risen From Hell/Risen From Hell-Main.html",
+      cover: "images/Projects/Risen From Hell.png",
     },
     // Wrap It Up
     { title: "Wrap It Up",
       platform: ["Windows"],
-      category: "3D Game",
+      category: ["3D Game", "Game Jam"],
       engine: "Unity",
       genre: ["Simulation", "Indie", "Holiday"],
       released: "23/12/2023",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Wrap It Up/Wrap It Up-Main.html",
-      cover: "images/Projects/Game/Wrap It Up/Cover Image.png",
+      link: "Project Pages/Game Projects/Wrap It Up/Wrap It Up-Main.html",
+      cover: "images/Projects/Wrap It Up.png",
     },
     // Neon Racer
     { title: "Neon Racer",
-      category: "3D Game",
+      category: ["3D Game"],
       engine: "Unity",
       platform: ["Windows", "Mobile", "VR"],
       genre: ["Racing", "Indie"],
       released: "27/10/2023",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Neon Racer/Neon Racer-Main.html",
-      cover: "images/Projects/Game/Neon Racer/Cover Img.gif",
+      link: "Project Pages/Game Projects/Neon Racer/Neon Racer-Main.html",
+      cover: "images/Projects/Neon Racer.gif",
     },
     // Realm Runner
     { title: "Realm Runner",
-      category: "3D Game",
+      category: ["3D Game"],
       engine: "Unity",
       platform: ["Windows", "Mac", "Linux"],
       genre: ["Action", "Adventure", "Platformer", "Indie"],
       released: "26/07/2023",
       tags: ["3D Game", "Unity"],
-      link: "Project Pages/Realm Runner/Realm Runner-Main.html",
-      cover: "images/Projects/Game/Realm Runner/Cover Image.png",
+      link: "Project Pages/Game Projects/Realm Runner/Realm Runner-Main.html",
+      cover: "images/Projects/Realm Runner.png",
     },
 
     // TBD
     /*{ title: "TBD",
-      category: "3D Game",
+      category: ["3D Game", "Game Jam"],
       engine: "Unity",
       platform: ["Windows", "Mac", "Linux", "Xbox", "PlayStation", "Switch"],
       genre: ["Indie", "Simulation"],
@@ -144,7 +132,7 @@ function renderGames(filter = {}) {
         return (!filter.search || game.title.toLowerCase().includes(filter.search)) &&
             (!filter.platform || game.platform.includes(filter.platform)) &&
             (!filter.genre || game.genre.includes(filter.genre)) &&
-            (!filter.category || game.category === filter.category) && (!filter.engine || game.engine === filter.engine);
+            (!filter.category || game.category.includes(filter.category)) && (!filter.engine || game.engine === filter.engine);
     });
 
 
@@ -157,6 +145,9 @@ function renderGames(filter = {}) {
         <div class="game-info">
             <h3><span class="gold">${game.title}</span></h3>
             <p><strong>Released:</strong> ${game.released || "TBD"}</p>
+
+            
+
             <p><strong>Platform:</strong> ${game.platform.join(", ")}</p>
 
             <div class="tags">
