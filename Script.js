@@ -7,8 +7,8 @@ const games = [
       genre: ["Action", "Adventure", "Narrative-Driven", "Indie", "Magic"],
       released: "TBD",
       tags: ["2D Game", "Unity"],
-      link: "Project Pages/Game Projects/4 Mini Godot Projects/4 Mini Godot Projects-Main.html",
-      cover: "images/Projects/4 Mini Godot Projects.png",
+      link: "Project Pages/Game Projects/Household Mayhem/Household Mayhem.html",
+      cover: "Project Pages/Game Projects/Household Mayhem/images/Banner Img.png",
     },
     // 4 Mini Godot Projects
     { title: "4 Mini Godot Projects",
@@ -19,7 +19,7 @@ const games = [
       released: "Educational Project",
       tags: ["2D Game", "Godot"],
       link: "Project Pages/Game Projects/4 Mini Godot Projects/4 Mini Godot Projects-Main.html",
-      cover: "images/Projects/4 Mini Godot Projects.png",
+      cover: "Project Pages/Game Projects/4 Mini Godot Projects/images/Banner Img.png",
     },
     // Dragon Slayer
     { title: "Dragon Slayer 2D",
@@ -30,7 +30,7 @@ const games = [
       released: "In-Development",
       tags: ["2D Game", "Godot"],
       link: "Project Pages/Game Projects/Dragon Slayer/Dragon Slayer-Main.html",
-      cover: "images/Projects/Dragon Slayer.png",
+      cover: "Project Pages/Game Projects/Dragon Slayer/images/Banner Img.png",
     },
     // Chub's Revenge
     { title: "Chub's Revenge",
@@ -41,7 +41,7 @@ const games = [
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Chub's Revenge/Chub's Revenge-Main.html",
-      cover: "images/Projects/Chub's Revenge.png",
+      cover: "Project Pages/Game Projects/Chub's Revenge/images/Banner Img.png",
     },
     // BuildABang
     { title: "BuildABang",
@@ -52,7 +52,7 @@ const games = [
       released: "05/07/2024",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/BuildABang/BuildABang-Main.html",
-      cover: "images/Projects/BuildABang.png",
+      cover: "Project Pages/Game Projects/BuildABang/images/Banner Img.png",
     },
     // Kades Last Stand
     { title: "Kades Last Stand",
@@ -63,7 +63,7 @@ const games = [
       released: "04/10/2024",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Kade's Last Stand/Kade's Last Stand-Main.html",
-      cover: "images/Projects/Kade's Last Stand.png",
+      cover: "Project Pages/Game Projects/Kade's Last Stand/images/Banner Img.png",
    },
     // Risen from Hell
     { title: "Risen from Hell",
@@ -74,7 +74,7 @@ const games = [
       released: "21/04/2024",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Risen From Hell/Risen From Hell-Main.html",
-      cover: "images/Projects/Risen From Hell.png",
+      cover: "Project Pages/Game Projects/Risen From Hell/images/Banner Img.png",
     },
     // Wrap It Up
     { title: "Wrap It Up",
@@ -85,7 +85,7 @@ const games = [
       released: "23/12/2023",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Wrap It Up/Wrap It Up-Main.html",
-      cover: "images/Projects/Wrap It Up.png",
+      cover: "Project Pages/Game Projects/Wrap It Up/images/Banner Img.png",
     },
     // Neon Racer
     { title: "Neon Racer",
@@ -96,7 +96,7 @@ const games = [
       released: "27/10/2023",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Neon Racer/Neon Racer-Main.html",
-      cover: "images/Projects/Neon Racer.gif",
+      cover: "Project Pages/Game Projects/Neon Racer/images/Banner Img.gif",
     },
     // Realm Runner
     { title: "Realm Runner",
@@ -107,7 +107,7 @@ const games = [
       released: "26/07/2023",
       tags: ["3D Game", "Unity"],
       link: "Project Pages/Game Projects/Realm Runner/Realm Runner-Main.html",
-      cover: "images/Projects/Realm Runner.png",
+      cover: "Project Pages/Game Projects/Realm Runner/images/Banner Img.png",
     },
 
     // TBD
@@ -140,7 +140,7 @@ function renderGames(filter = {}) {
     const card = document.createElement("div");
     card.className = "game-card";
     card.innerHTML = `
-        <img src="${game.cover}" alt="${game.title}" />
+        <a href="${game.link || '#'}"><img src="${game.cover}" alt="${game.title}" /></a>
         <div class="game-info">
             <h3><span class="gold">${game.title}</span></h3>
             <p><strong>Released:</strong> ${game.released || "TBD"}</p>
